@@ -92,7 +92,7 @@ public class GroundEnemyAI : MonoBehaviour
     bool ShouldJump()
     {
         // 현재 위치와 목표 지점 사이에 장애물이 있는지 확인
-        Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - rb.position);
+        Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - rb.position).normalized;
         RaycastHit2D hit = Physics2D.Raycast(rb.position, direction, direction.magnitude, obstacleLayer);
 
         if (isGrounded && hit.collider != null && hit.collider.gameObject.layer == LayerMask.NameToLayer("Obstacle"))
