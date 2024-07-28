@@ -2495,8 +2495,11 @@ MonoBehaviour:
   waitTime: 0.1
   jumpForce: 5
   fireParticlePrefab: {fileID: 5330990960239211187, guid: 9b201b62803bbfb4cb265d3ffb482cd9, type: 3}
+  exprosionParticlePrefab: {fileID: 5330990960239211187, guid: 9b201b62803bbfb4cb265d3ffb482cd9, type: 3}
+  bigFireParticlePrefab: {fileID: 5330990960239211187, guid: 9b201b62803bbfb4cb265d3ffb482cd9, type: 3}
   poolSize: 10
   particleLifetime: 1.5
+  explosionRadius: 1.5
 --- !u!1 &1255923886
 GameObject:
   m_ObjectHideFlags: 0
