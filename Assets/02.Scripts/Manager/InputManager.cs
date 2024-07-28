@@ -6,31 +6,53 @@ using UnityEngine.InputSystem;
 
 public class InputManager : MonoBehaviour
 {
-    public static PlayerInput PlayerInput;
+    public static GameControls InputAsset;
 
     public static Vector2 Movement;
     public static bool JumpPressed;
     public static bool AttackPressed;
-
-    private InputAction _moveAction;
-    private InputAction _jumpAction;
-    private InputAction _attackAction;
+    public static bool InteractPressed;
+    
+    // 델리게이트 선언
+    public delegate void KeyAction();
+    
+    // 입력 이벤트 선언
+    public static event KeyAction OnJump;
+    public static event KeyAction OnDash;
 
     private void Awake()
     {
-        print(TryGetComponent(out PlayerInput));
-
-        _moveAction = PlayerInput.actions["Move"];
-        _jumpAction = PlayerInput.actions["Jump"];
-        _attackAction = PlayerInput.actions["Attack"];
+        InputAsset = new GameControls();
     }
 
     private void Update()
     {
-        Movement = _moveAction.ReadValue<Vector2>();
+        Movement = InputAsset.Player.Move.ReadValue<Vector2>();
+        JumpPressed = InputAsset.Player.Jump.IsPressed();
+        AttackPressed = InputAsset.Player.Attack.IsPressed();
+        InteractPressed = InputAsset.Player.Interact.IsPressed();
 
-        JumpPressed = _jumpAction.IsPressed();
+        InputAsset.Player.Jump.performed += ctx => Jump();
+        InputAsset.Player.Dash.performed += ctx => Dash();
+    }
+    
+    private void OnEnable()
+    {
+        InputAsset.Enable();
+    }
 
-        AttackPressed = _attackAction.IsPressed();
+    private void OnDisable()
+    {
+        InputAsset.Disable();
+    }
+
+    private void Jump()
+    {
+        OnJump?.Invoke();
+    }
+
+    private void Dash()
+    {
+        OnDash?.Invoke();
     }
 }

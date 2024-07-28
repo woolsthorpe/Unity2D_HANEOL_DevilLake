@@ -19,4 +19,5 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   groundDetectionRayLength: 0.02
+  gravityScale: 5
   debugShowIsGroundedBox: 1

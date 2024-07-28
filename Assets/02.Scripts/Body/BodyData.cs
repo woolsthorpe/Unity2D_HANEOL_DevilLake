@@ -2,12 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Body Data")]
+[CreateAssetMenu(menuName = "SO/Body Data")]
 public class BodyData : ScriptableObject
 {
     public string bodyName;
     public string bodyDescription;
-    // 육체 리소스, 애니메이터 등등도 필요할 듯.
     public float maxBlood;                  // 최대 혈액량
     public float extractedBloodAmount;      // 흡혈량
     public float bleedTime;                 // 출혈 시간
