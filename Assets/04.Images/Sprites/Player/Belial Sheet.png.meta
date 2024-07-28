@@ -3,7 +3,7 @@ guid: ff16231040bbd2240a15dd0096b8730b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 12
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: idle sprite sheet_0
+      name: Belial Arm Left
       rect:
         serializedVersion: 2
         x: 236
@@ -118,7 +118,7 @@ TextureImporter:
         width: 438
         height: 833
       alignment: 9
-      pivot: {x: 0.9061897, y: 0.95848215}
+      pivot: {x: 0.9061897, y: 0.9584821}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -131,7 +131,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle sprite sheet_1
+      name: Belial Head
       rect:
         serializedVersion: 2
         x: 390
@@ -139,7 +139,7 @@ TextureImporter:
         width: 1239
         height: 866
       alignment: 9
-      pivot: {x: 0.5708391, y: 0.056249604}
+      pivot: {x: 0.5708391, y: 0.0562496}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -152,7 +152,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle sprite sheet_2
+      name: Belial Body
       rect:
         serializedVersion: 2
         x: 841
@@ -160,7 +160,7 @@ TextureImporter:
         width: 581
         height: 753
       alignment: 9
-      pivot: {x: 0.53266317, y: 0.1377198}
+      pivot: {x: 0.5326632, y: 0.1377198}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -173,15 +173,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle sprite sheet_3
+      name: Belial Arm Right
       rect:
         serializedVersion: 2
-        x: 1589
-        y: 1038
+        x: 1572
+        y: 1044
         width: 392
         height: 816
       alignment: 9
-      pivot: {x: 0.12481347, y: 0.95059174}
+      pivot: {x: 0.1248135, y: 0.9505917}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -194,7 +194,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle sprite sheet_4
+      name: Belial Finger Left 1
       rect:
         serializedVersion: 2
         x: 40
@@ -215,7 +215,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle sprite sheet_5
+      name: Belial Finger Left 2
       rect:
         serializedVersion: 2
         x: 319
@@ -223,7 +223,7 @@ TextureImporter:
         width: 136
         height: 253
       alignment: 9
-      pivot: {x: 0.48255786, y: 0.86566716}
+      pivot: {x: 0.4825579, y: 0.8656672}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -236,7 +236,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle sprite sheet_6
+      name: Belial Leg Left
       rect:
         serializedVersion: 2
         x: 754
@@ -244,7 +244,7 @@ TextureImporter:
         width: 287
         height: 505
       alignment: 9
-      pivot: {x: 0.4669383, y: 0.78653663}
+      pivot: {x: 0.4669383, y: 0.7865366}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -257,7 +257,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle sprite sheet_7
+      name: Belial Leg Right
       rect:
         serializedVersion: 2
         x: 1226
@@ -265,7 +265,7 @@ TextureImporter:
         width: 268
         height: 460
       alignment: 9
-      pivot: {x: 0.49114853, y: 0.77331287}
+      pivot: {x: 0.4911485, y: 0.7733129}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -278,7 +278,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle sprite sheet_8
+      name: Belial Finger Right 1
       rect:
         serializedVersion: 2
         x: 1649
@@ -286,7 +286,7 @@ TextureImporter:
         width: 207
         height: 129
       alignment: 9
-      pivot: {x: 0.86670864, y: 0.4816116}
+      pivot: {x: 0.8667086, y: 0.4816116}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -299,7 +299,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle sprite sheet_9
+      name: Belial Finger Right 2
       rect:
         serializedVersion: 2
         x: 1957
@@ -307,7 +307,7 @@ TextureImporter:
         width: 141
         height: 236
       alignment: 9
-      pivot: {x: 0.66823715, y: 0.8920071}
+      pivot: {x: 0.6682371, y: 0.8920071}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -320,15 +320,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle sprite sheet_10
+      name: Belial Finger Left 3
       rect:
         serializedVersion: 2
         x: 125
-        y: 41
+        y: 47
         width: 225
         height: 220
       alignment: 9
-      pivot: {x: 0.18371372, y: 0.7156496}
+      pivot: {x: 0.1837137, y: 0.7156496}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -341,7 +341,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle sprite sheet_11
+      name: Belial Finger Left 4
       rect:
         serializedVersion: 2
         x: 390
@@ -349,7 +349,7 @@ TextureImporter:
         width: 129
         height: 274
       alignment: 9
-      pivot: {x: 0.37127945, y: 0.8203263}
+      pivot: {x: 0.3712794, y: 0.8203263}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -362,7 +362,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle sprite sheet_12
+      name: Belial Finger Right 3
       rect:
         serializedVersion: 2
         x: 1681
@@ -383,7 +383,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle sprite sheet_13
+      name: Belial Finger Right 4
       rect:
         serializedVersion: 2
         x: 1978
@@ -391,7 +391,7 @@ TextureImporter:
         width: 120
         height: 288
       alignment: 9
-      pivot: {x: 0.4011607, y: 0.90359443}
+      pivot: {x: 0.4011607, y: 0.9035944}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -414,20 +414,20 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      idle sprite sheet_0: -553526915
-      idle sprite sheet_1: -1596681566
-      idle sprite sheet_10: 1912814822
-      idle sprite sheet_11: -1942133493
-      idle sprite sheet_12: 923576971
-      idle sprite sheet_13: 881703008
-      idle sprite sheet_2: -1871305250
-      idle sprite sheet_3: -170516927
-      idle sprite sheet_4: -577002940
-      idle sprite sheet_5: -238318273
-      idle sprite sheet_6: -107266929
-      idle sprite sheet_7: -1025313920
-      idle sprite sheet_8: -1400090414
-      idle sprite sheet_9: -1284031028
+      Belial Arm Left: -553526915
+      Belial Arm Right: -170516927
+      Belial Body: -1871305250
+      Belial Finger Left 1: -577002940
+      Belial Finger Left 2: -238318273
+      Belial Finger Left 3: 1912814822
+      Belial Finger Left 4: -1942133493
+      Belial Finger Right 1: -1400090414
+      Belial Finger Right 2: -1284031028
+      Belial Finger Right 3: 923576971
+      Belial Finger Right 4: 881703008
+      Belial Head: -1596681566
+      Belial Leg Left: -107266929
+      Belial Leg Right: -1025313920
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
