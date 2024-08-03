@@ -19,6 +19,10 @@ public class InputManager : MonoBehaviour
     // 입력 이벤트 선언
     public static event KeyAction OnJump;
     public static event KeyAction OnDash;
+    public static event KeyAction OnAttack;
+    public static event KeyAction OnWeaponAttack;
+    public static event KeyAction OnWeaponSkill;
+    public static event KeyAction OnInteract;
 
     private void Awake()
     {
@@ -34,6 +38,10 @@ public class InputManager : MonoBehaviour
 
         InputAsset.Player.Jump.performed += ctx => Jump();
         InputAsset.Player.Dash.performed += ctx => Dash();
+        InputAsset.Player.Attack.performed += ctx => Attack();
+        // 혈기 일반공격 바인딩 후 로직 작성하기.
+        InputAsset.Player.UseWeaponSkill.performed += ctx => WeaponSkill();
+        InputAsset.Player.Interact.performed += ctx => Interact();
     }
     
     private void OnEnable()
@@ -54,5 +62,25 @@ public class InputManager : MonoBehaviour
     private void Dash()
     {
         OnDash?.Invoke();
+    }
+
+    private void Attack()
+    {
+        OnAttack?.Invoke();
+    }
+    
+    private void WeaponAttack()
+    {
+        OnWeaponAttack?.Invoke();
+    }
+    
+    private void WeaponSkill()
+    {
+        OnWeaponSkill?.Invoke();
+    }
+    
+    private void Interact()
+    {
+        OnInteract?.Invoke();
     }
 }

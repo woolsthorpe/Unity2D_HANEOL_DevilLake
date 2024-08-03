@@ -14,4 +14,5 @@ public class BodyData : ScriptableObject
     public float damageReductionPercentage; // 피해 감소
     public float attackSpeedPercentage;     // 공격 속도
     public float moveSpeedPercentage;       // 이동 속도
+    public List<Weapon> weapons;            // 혈기 리스트
 }

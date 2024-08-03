@@ -11,7 +11,7 @@ public class BodyMoveState : IBodyState
 
     public void Update(Body body)
     {
-        if (InputManager.Movement == Vector2.zero)
+        if (InputManager.Movement.x == 0f)
         {
             body.StateMachine.TransitionToState(body.StateMachine.IdleState, body);
         }
@@ -19,7 +19,7 @@ public class BodyMoveState : IBodyState
 
     public void FixedUpdate(Body body)
     {
-        Vector3 direction = InputManager.Movement.normalized;
+        Vector3 direction = new Vector3(InputManager.Movement.x, 0f).normalized;
         direction.z = 0;
         
         body.TurnCheck(InputManager.Movement);

@@ -4,20 +4,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
 
-public class Player : MonoBehaviour, IDamageable, IHealable
+public class Player : MonoBehaviour
 {
     public PlayerData playerData;               // 플레이어 데이터
     public PlayerStateMachine StateMachine { get; private set; } = new PlayerStateMachine();
     public SpriteRenderer sr;
     public CapsuleCollider2D collier;           // 플레이어 콜라이더
+    public CircleCollider2D interactionRange;   // 상호작용 범위
     public Animator animator;
     public Rigidbody2D rb;
     public Body body;                           // 육체
     public Weapon weapon;                       // 혈기 
 
-    public Transform currentHostTransform;      // 현재 기생하고 있는 숙주의 위치 정보
-    public CircleCollider2D interactionRange;   // 상호작용 범위
-    public IInteractable currentInteractable;   // 현재 가능한 상호작용 
+    [HideInInspector] public Transform currentHostTransform;      // 현재 기생하고 있는 숙주의 위치 정보
+    [HideInInspector] public IInteractable currentInteractable;   // 현재 가능한 상호작용 
     
     private bool _facingRight = true;
 
@@ -26,14 +26,20 @@ public class Player : MonoBehaviour, IDamageable, IHealable
         StateMachine.Initialize(this);
     }
     
+    private void OnEnable()
+    {
+        // 입력 이벤트 구독
+        InputManager.OnInteract += OnInteract;
+    }
+
+    private void OnDisable()
+    {
+        InputManager.OnInteract -= OnInteract;
+    }
+    
     private void Update()
     {
         StateMachine.UpdateState(this);
-
-        if (InputManager.InteractPressed) // 임시 코드 --> 추후 이벤트로 변경
-        {
-            Interaction();
-        }
     }
 
     private void FixedUpdate()
@@ -42,19 +48,9 @@ public class Player : MonoBehaviour, IDamageable, IHealable
     }
 
     // 상호작용 
-    public void Interaction()
+    public void OnInteract()
     {
         currentInteractable?.Interact(this);
-    }
-    
-    public void TakeDamage(float amount)
-    {
-        throw new NotImplementedException();
-    }
-
-    public void Heal(float amount)
-    {
-        throw new NotImplementedException();
     }
 
     public void TurnCheck(Vector2 moveInput)

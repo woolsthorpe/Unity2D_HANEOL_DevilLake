@@ -2,17 +2,30 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BodyDieState : MonoBehaviour
+
+public class BodyDieState : IBodyState
 {
-    // Start is called before the first frame update
-    void Start()
+    public void Enter(Body body)
     {
+        // Die 애니메이션 재생 로직 작성 
+        
+        // 플레이어와 육체 분리 로직 작성
+        body.EndParasitic(body.parasiticPlayer);
+    }
+
+    public void Update(Body body)
+    {
+        // Die 애니메이션 종료시 육체 삭제 로직 작성
         
     }
 
-    // Update is called once per frame
-    void Update()
+    public void FixedUpdate(Body body)
     {
-        
+
+    }
+
+    public void Exit(Body body)
+    {
+
     }
 }
