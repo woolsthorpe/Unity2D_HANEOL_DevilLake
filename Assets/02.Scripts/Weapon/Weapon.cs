@@ -2,12 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Weapon : ScriptableObject
+[CreateAssetMenu(menuName = "SO/Weapon")]
+public class Weapon : ScriptableObject
 {
     public string weaponName;
     public string weaponDescription;
     // 공격력 등등 스탯 추가하기.
+    public WeaponAttack weaponAttack;   // 혈기 일반공격
     public WeaponSkill weaponSkill;     // 혈기술
 
-    public abstract void UseWeaponSkill();
+    public void Attack()
+    {
+        weaponAttack.Attack();
+    }
+    public void UseWeaponSkill()
+    {
+        weaponSkill.Use();
+    }
 }

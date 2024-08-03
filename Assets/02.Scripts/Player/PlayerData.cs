@@ -7,7 +7,5 @@ public class PlayerData : ScriptableObject
 {
     public float eyeMoveSpeed;
 
-    public float gravityScale;      // 중력 세기 
-
-    public float interactionRange;  // 상호작용 범위
+    public float gravityScale;      // 중력 배수
 }

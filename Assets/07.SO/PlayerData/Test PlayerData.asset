@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Test PlayerData
   m_EditorClassIdentifier: 
   eyeMoveSpeed: 5
-  gravityScale: 0
+  gravityScale: 1

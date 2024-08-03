@@ -21,3 +21,4 @@ MonoBehaviour:
   damageReductionPercentage: 0
   attackSpeedPercentage: 0
   moveSpeedPercentage: 0
+  weapons: []
