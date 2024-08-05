@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Cinemachine;
+using Unity.VisualScripting;
 
 public class HUDController : MonoBehaviour
 {
@@ -32,6 +34,16 @@ public class HUDController : MonoBehaviour
     [SerializeField] private GameObject PausePanel;
     //[SerializeField] private 
 
+    [Space(5)]
+    [SerializeField]private CinemachineVirtualCamera virtualCamera;
+    private CinemachineBasicMultiChannelPerlin multiChannelPerlin;
+    [SerializeField] private float shakeIntencity;
+    [SerializeField] private float shakeTime;
+    [SerializeField] private float shakeFrequency;
+    private float startingIntencity;
+    private float shakeTimerTotal;
+    private float shakeTimer;
+
     private void Awake()
     {
         if (hudController_Instance == null)
@@ -45,20 +57,45 @@ public class HUDController : MonoBehaviour
     private void Start()
     {
         PausePanel.SetActive(false);
+
+        if (virtualCamera == null)
+        {
+            virtualCamera = GameObject.FindObjectOfType(typeof(CinemachineVirtualCamera)).
+                GetComponent<CinemachineVirtualCamera>();
+        }
+        //시내머신 Virtual Camera -> Noise ->60Shake변경
+        multiChannelPerlin = virtualCamera.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
     }
 
     private void Update()
     {
-        HpImageFlow();
-
-    if(UnityEngine.Input.GetKeyDown(KeyCode.E))
+        //테스트 용도
+        if (UnityEngine.Input.GetKeyDown(KeyCode.E))
         {
-            ChangeHpBar(currentHealth+10,maxHeadlth);
+            ChangeHpBar(currentHealth + 10, maxHeadlth);
         }
         if (UnityEngine.Input.GetKeyDown(KeyCode.Q))
         {
             ChangeHpBar(currentHealth - 10, maxHeadlth);
         }
+
+        if(UnityEngine.Input.GetKeyDown(KeyCode.W))
+        {
+            ShakeCamera(shakeIntencity,shakeTime);
+        }
+        //
+
+        HpImageFlow();
+
+        if(shakeTimer>0f)
+        {
+            shakeTimer -= Time.deltaTime;
+            shakeTimer = Mathf.Clamp(shakeTimer,0f,shakeTimerTotal);
+
+            multiChannelPerlin.m_AmplitudeGain = Mathf.Lerp(startingIntencity, 0f, 1-(shakeTimer / shakeTimerTotal));
+
+        }
+        
 
     }
 
@@ -177,5 +214,15 @@ public class HUDController : MonoBehaviour
     public void SkillChange()
     {
 
+    }
+
+    public void ShakeCamera(float intensity,float time)
+    {
+        multiChannelPerlin.m_AmplitudeGain = intensity;
+        multiChannelPerlin.m_FrequencyGain = shakeFrequency;
+
+        startingIntencity = intensity;
+        shakeTimerTotal = time;
+        shakeTimer = time;
     }
 }

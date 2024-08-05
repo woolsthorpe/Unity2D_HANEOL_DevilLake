@@ -263,6 +263,10 @@ MonoBehaviour:
   growLavel_Bar: {fileID: 1601767165}
   currentLavel_Text: {fileID: 1398342404}
   PausePanel: {fileID: 288001499}
+  virtualCamera: {fileID: 0}
+  shakeIntencity: 2
+  shakeTime: 0.6
+  shakeFrequency: 0.1
 --- !u!4 &144231165
 Transform:
   m_ObjectHideFlags: 0
