@@ -103,8 +103,6 @@ public class EnemyFireball : MonoBehaviour
             particle.SetActive(true);
             StartCoroutine(DestroyAfterTime(particle, particleLifetime)); // 2초 후에 비활성화
         }
-
-        Debug.Log("Fire!");
     }
 
     private GameObject GetPooledObject()
