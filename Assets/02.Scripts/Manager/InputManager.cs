@@ -34,6 +34,7 @@ public class InputManager : MonoBehaviour
 
         InputAsset.Player.Jump.performed += ctx => Jump();
         InputAsset.Player.Dash.performed += ctx => Dash();
+
     }
     
     private void OnEnable()

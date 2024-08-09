@@ -8,7 +8,7 @@ using Unity.VisualScripting;
 
 public class HUDController : MonoBehaviour
 {
-    public static HUDController hudController_Instance;
+    public static HUDController instance { get; private set; }
 
     public float maxHeadlth=90f;
     public float currentHealth=60f;
@@ -46,9 +46,9 @@ public class HUDController : MonoBehaviour
 
     private void Awake()
     {
-        if (hudController_Instance == null)
-            hudController_Instance = this;
-        else if (hudController_Instance != this)
+        if (instance == null)
+            instance = this;
+        else if (instance != this)
             Destroy(this.gameObject);
 
         DontDestroyOnLoad(this.gameObject);
@@ -58,6 +58,7 @@ public class HUDController : MonoBehaviour
     {
         PausePanel.SetActive(false);
 
+       
         if (virtualCamera == null)
         {
             virtualCamera = GameObject.FindObjectOfType(typeof(CinemachineVirtualCamera)).
