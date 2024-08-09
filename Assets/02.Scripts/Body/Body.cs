@@ -225,11 +225,16 @@ public class Body : MonoBehaviour, IInteractable, IDamageable, IHealable
         }
         
         currentBodyHealth -= damage;
+       
+      
         if (currentBodyHealth <= 0f)
         {
             // 사망
             StateMachine.TransitionToState(StateMachine.DieState, this);
         }
+
+        //UI연동
+        HUDController.instance.ChangeHpBar(currentBodyHealth, bodyData.maxBodyHealth);
     }
 
     public void Heal(float amount)

@@ -71,19 +71,19 @@ public class HUDController : MonoBehaviour
     private void Update()
     {
         //테스트 용도
-        if (UnityEngine.Input.GetKeyDown(KeyCode.E))
-        {
-            ChangeHpBar(currentHealth + 10, maxHeadlth);
-        }
-        if (UnityEngine.Input.GetKeyDown(KeyCode.Q))
-        {
-            ChangeHpBar(currentHealth - 10, maxHeadlth);
-        }
+        //if (UnityEngine.Input.GetKeyDown(KeyCode.E))
+        //{
+        //    ChangeHpBar(currentHealth + 10, maxHeadlth);
+        //}
+        //if (UnityEngine.Input.GetKeyDown(KeyCode.Q))
+        //{
+        //    ChangeHpBar(currentHealth - 10, maxHeadlth);
+        //}
 
-        if(UnityEngine.Input.GetKeyDown(KeyCode.W))
-        {
-            ShakeCamera(shakeIntencity,shakeTime);
-        }
+        //if(UnityEngine.Input.GetKeyDown(KeyCode.W))
+        //{
+        //    ShakeCamera(shakeIntencity,shakeTime);
+        //}
         //
 
         HpImageFlow();

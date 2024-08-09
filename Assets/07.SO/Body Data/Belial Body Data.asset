@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bodyName: "\uD14C\uC2A4\uD2B8 \uC721\uCCB4"
   bodyDescription: 
-  maxBlood: 0
+  maxBodyHealth: 100
   extractedBloodAmount: 0
-  bleedTime: 0
+  bleedTime: 0.7
   bonusDamagePercentage: 0
   damageReductionPercentage: 0
   attackSpeedPercentage: 0
-  moveSpeedPercentage: 0
-  weapons: []
+  moveSpeedPercentage: 1
+  getableWeapons: []

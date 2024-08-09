@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31a24b5b5d197af4abbb5c253f441333, type: 3}
   m_Name: Test PlayerData
   m_EditorClassIdentifier: 
-  eyeMoveSpeed: 5
-  gravityScale: 1
+  moveSpeed: 5
+  jumpPower: 600
+  dashSpeed: 12.5
+  dashCoolDown: 1
