@@ -18,7 +18,7 @@ MonoBehaviour:
   extractedBloodAmount: 0
   bleedTime: 0.7
   bonusDamagePercentage: 0
-  damageReductionPercentage: 0
+  damageReductionPercentage: 1
   attackSpeedPercentage: 0
   moveSpeedPercentage: 1
   getableWeapons: []

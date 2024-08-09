@@ -38,6 +38,8 @@ public class InputManager : MonoBehaviour
 
         InputAsset.Player.Jump.performed += ctx => Jump();
         InputAsset.Player.Dash.performed += ctx => Dash();
+        InputAsset.Player.Interact.performed += ctx => Interact();
+        InputAsset.Player.Attack.performed += ctx => Attack();
     }
     
     private void OnEnable()

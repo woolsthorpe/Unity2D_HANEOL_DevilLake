@@ -58,6 +58,7 @@ public class Player : MonoBehaviour
     // 상호작용 
     public void OnInteract()
     {
+        Debug.Log("Test");
         currentInteractable?.Interact(this);
     }
 

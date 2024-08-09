@@ -1,19 +1,26 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
-public class EnemyCharcoal : MonoBehaviour
+public class EnemyCharcoal : MonoBehaviour, IDamageable
 {
     Rigidbody2D rb;
 
     public float moveSpeed = 2f;
     public Transform groundCheck;
     public LayerMask groundLayer;
-    public float waitTime = 2f; // ¹æÇâ ÀüÈ¯ Àü¿¡ ±â´Ù¸± ½Ã°£
+    public float waitTime = 2f; // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¯ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ù¸ï¿½ ï¿½Ã°ï¿½
     public float explosionRadius = 3f;
     public float explosionDelay = 2.5f;
     public float knockbackForce = 4f;
     public GameObject exprosionParticlePrefab;
 
+    [Header("í…ŒìŠ¤íŠ¸ìš© ì²´ë ¥ ë³€ìˆ˜")] 
+    public float maxHP;
+    private float _currentHP;
+
+    [Header("í…ŒìŠ¤íŠ¸ìš© ê³µê²©ë ¥ ë³€ìˆ˜")] 
+    public float damage;
 
     private bool isWaiting = false;
     private bool movingRight = true;
@@ -22,14 +29,17 @@ public class EnemyCharcoal : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        StartCoroutine(DelayedExplosion(10f)); // »ý¼ºµÈ ÈÄ 10ÃÊ ÈÄ Æø¹ß
+        StartCoroutine(DelayedExplosion(10f)); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ 10ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+        
+        // ì²´ë ¥ ì´ˆê¸°í™”
+        _currentHP = maxHP;
     }
 
     void FixedUpdate()
     {
         if (!isWaiting && !isDead)
         {
-            // ·¹ÀÌÄ³½ºÆ®¸¦ ½Ã°¢È­
+            // ï¿½ï¿½ï¿½ï¿½Ä³ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½Ã°ï¿½È­
             Debug.DrawRay(groundCheck.position, Vector2.down * 1.5f, Color.red);
 
             RaycastHit2D groundInfo = Physics2D.Raycast(groundCheck.position, Vector2.down, 1f, groundLayer);
@@ -47,14 +57,14 @@ public class EnemyCharcoal : MonoBehaviour
     private IEnumerator ChangeDirection()
     {
         isWaiting = true;
-        rb.velocity = new Vector2(0, rb.velocity.y); // ÀÌµ¿À» ¸ØÃã
-        yield return new WaitForSeconds(waitTime); // ÀÏÁ¤ ½Ã°£ µ¿¾È ±â´Ù¸²
+        rb.velocity = new Vector2(0, rb.velocity.y); // ï¿½Ìµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+        yield return new WaitForSeconds(waitTime); // ï¿½ï¿½ï¿½ï¿½ ï¿½Ã°ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ù¸ï¿½
 
-        // ÀûÀÇ À§Ä¡¸¦ ¾à°£ ÀÌµ¿½ÃÄÑ ¹ßÆÇ ³¡¿¡¼­ ¹þ¾î³ª°Ô ÇÔ
+        // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¡ï¿½ï¿½ ï¿½à°£ ï¿½Ìµï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½î³ªï¿½ï¿½ ï¿½ï¿½
         float adjustment = movingRight ? 0.2f : -0.2f;
         transform.position = new Vector2(transform.position.x + adjustment, transform.position.y);
 
-        // ¹æÇâ ÀüÈ¯
+        // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¯
         movingRight = !movingRight;
         transform.eulerAngles = new Vector3(0, movingRight ? 0 : 180, 0);
 
@@ -64,7 +74,7 @@ public class EnemyCharcoal : MonoBehaviour
     private IEnumerator DelayedExplosion(float delay)
     {
         yield return new WaitForSeconds(delay);
-        if (!isDead) // ¾ÆÁ÷ Á×Áö ¾Ê¾Ò´Ù¸é
+        if (!isDead) // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ê¾Ò´Ù¸ï¿½
         {
             StartCoroutine(Explode());
         }
@@ -78,28 +88,35 @@ public class EnemyCharcoal : MonoBehaviour
     private IEnumerator Explode()
     {
         isWaiting = true;
-        // Á¡È­ ½Ã 2.5ÃÊ ÈÄ ¹Ý°æ 3mÀÇ Æø¹ß
+        // ï¿½ï¿½È­ ï¿½ï¿½ 2.5ï¿½ï¿½ ï¿½ï¿½ ï¿½Ý°ï¿½ 3mï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         yield return new WaitForSeconds(explosionDelay);
 
         GameObject exprosion = Instantiate(exprosionParticlePrefab, transform.position, Quaternion.identity);
 
-        // 1ÃÊ ÈÄ¿¡ particleÀ» »èÁ¦
+        // 1ï¿½ï¿½ ï¿½Ä¿ï¿½ particleï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         Destroy(exprosion, 1f);
 
 
         Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, explosionRadius);
         foreach (Collider2D hitCollider in hitColliders)
         {
-            if (hitCollider.CompareTag("Player"))
+            if (hitCollider.gameObject.CompareTag("Body"))
             {
-                    // ¿©±â¼­ Æø¹ß È¿°ú¿Í µ¥¹ÌÁö Àû¿ë               
+                if (hitCollider.gameObject.GetComponent<Body>().parasiticPlayer)
+                {
+                    // ï¿½ï¿½ï¿½â¼­ ï¿½ï¿½ï¿½ï¿½ È¿ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½         
+                    hitCollider.gameObject.TryGetComponent(out IDamageable damageable);
+                    Vector2 hitDirection = (hitCollider.gameObject.transform.position - hitCollider.transform.position).normalized;
+                    Debug.Log(damageable);
+                    damageable.TakeDamage(damage, true, hitDirection, knockbackForce);
+                }
             }
         }
-        // ÀÌ ¿ÀºêÁ§Æ®¸¦ ÆÄ±«
+        // ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½Ä±ï¿½
         Destroy(gameObject);
     }
 
-    private void OnTriggerEnter2D(Collider2D other)    // ÇÃ·¹ÀÌ¾î°¡ ÀÎÁ¢ ½Ã
+    private void OnTriggerEnter2D(Collider2D other)    // ï¿½Ã·ï¿½ï¿½Ì¾î°¡ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½
     {
         if (!isDead && other.CompareTag("Player"))
         {
@@ -112,8 +129,31 @@ public class EnemyCharcoal : MonoBehaviour
         if (!isDead)
         {
             isDead = true;
-            rb.velocity = new Vector2(-attackDirection.x * knockbackForce, rb.velocity.y); // ³Ë¹é Àû¿ë
+            rb.velocity = new Vector2(-attackDirection.x * knockbackForce, rb.velocity.y); // ï¿½Ë¹ï¿½ ï¿½ï¿½ï¿½ï¿½
             StartCoroutine(Explode());
         }
+    }
+
+    public void TakeDamage(float amount, bool damageReduction = true, Vector2 hitDirection = new Vector2(),
+        float knockbackForce = 0)
+    {
+        rb.AddForce(hitDirection * knockbackForce, ForceMode2D.Impulse);    // ë„‰ë°±
+        
+        // ëŒ€ë¯¸ì§€ í”¼í•´ ê³„ì‚°
+        float damage = amount;
+        _currentHP -= damage;
+        
+        if (_currentHP <= 0f)
+        {
+            // ì‚¬ë§ ë¡œì§ ìž‘ì„±
+            Debug.Log("ì  ì‚¬ë§");
+            Destroy(gameObject);
+        }
+    }
+
+    void OnDrawGizmos()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, explosionRadius);
     }
 }

@@ -2,21 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyFireball : MonoBehaviour
+public class EnemyFireball : MonoBehaviour, IDamageable
 {
     Rigidbody2D rb;
 
     public float moveSpeed = 2f;
     public Transform groundCheck;
     public LayerMask groundLayer;
-    public float waitTime = 2f; // ¹æÇâ ÀüÈ¯ Àü¿¡ ±â´Ù¸± ½Ã°£
+    public float waitTime = 2f; // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¯ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ù¸ï¿½ ï¿½Ã°ï¿½
     public float jumpForce = 5f;
-    public GameObject fireParticlePrefab; // ºÒ±æ ÀÌÆåÆ® ÇÁ¸®ÆÕ
+    public GameObject fireParticlePrefab; // ï¿½Ò±ï¿½ ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     public GameObject exprosionParticlePrefab;
     public GameObject bigFireParticlePrefab;
-    public int poolSize = 10; // °´Ã¼ Ç®ÀÇ Å©±â
-    public float particleLifetime = 2f; // ÆÄÆ¼Å¬ »ýÁ¸ ½Ã°£
+    public int poolSize = 10; // ï¿½ï¿½Ã¼ Ç®ï¿½ï¿½ Å©ï¿½ï¿½
+    public float particleLifetime = 2f; // ï¿½ï¿½Æ¼Å¬ ï¿½ï¿½ï¿½ï¿½ ï¿½Ã°ï¿½
     public float explosionRadius = 1.5f;
+    
+    [Header("í…ŒìŠ¤íŠ¸ìš© ì²´ë ¥ ì½”ë“œ")] 
+    public float maxHP;
+    [SerializeField] private float _currentHP;
 
     private Queue<GameObject> particlePool;
     private bool isWaiting = false;
@@ -26,7 +30,7 @@ public class EnemyFireball : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
 
-        // °´Ã¼ Ç® ÃÊ±âÈ­
+        // ï¿½ï¿½Ã¼ Ç® ï¿½Ê±ï¿½È­
         particlePool = new Queue<GameObject>();
         for (int i = 0; i < poolSize; i++)
         {
@@ -34,13 +38,16 @@ public class EnemyFireball : MonoBehaviour
             obj.SetActive(false);
             particlePool.Enqueue(obj);
         }
+        
+        // ì²´ë ¥ ì´ˆê¸°í™”
+        _currentHP = maxHP;
     }
 
     void FixedUpdate()
     {
         if (!isWaiting)
         {
-            // ·¹ÀÌÄ³½ºÆ®¸¦ ½Ã°¢È­
+            // ï¿½ï¿½ï¿½ï¿½Ä³ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½Ã°ï¿½È­
             Debug.DrawRay(groundCheck.position, Vector2.down * 2f, Color.red);
 
             RaycastHit2D groundInfo = Physics2D.Raycast(groundCheck.position, Vector2.down, 2f, groundLayer);
@@ -56,7 +63,7 @@ public class EnemyFireball : MonoBehaviour
 
         if (!isWaiting)
         {
-            // ·¹ÀÌÄ³½ºÆ®¸¦ ½Ã°¢È­
+            // ï¿½ï¿½ï¿½ï¿½Ä³ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½Ã°ï¿½È­
             Debug.DrawRay(groundCheck.position, Vector2.down * 0.6f, Color.blue);
 
             RaycastHit2D jumpInfo = Physics2D.Raycast(groundCheck.position, Vector2.down, 0.6f, groundLayer);
@@ -67,7 +74,7 @@ public class EnemyFireball : MonoBehaviour
             }
         }
 
-            //Å×½ºÆ®
+            //ï¿½×½ï¿½Æ®
             if (Input.GetKeyDown(KeyCode.Space))
         {
             StartCoroutine(Explode());
@@ -77,14 +84,14 @@ public class EnemyFireball : MonoBehaviour
     private IEnumerator ChangeDirection()
     {
         isWaiting = true;
-        rb.velocity = new Vector2(0, rb.velocity.y); // ÀÌµ¿À» ¸ØÃã
-        yield return new WaitForSeconds(waitTime); // ÀÏÁ¤ ½Ã°£ µ¿¾È ±â´Ù¸²
+        rb.velocity = new Vector2(0, rb.velocity.y); // ï¿½Ìµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+        yield return new WaitForSeconds(waitTime); // ï¿½ï¿½ï¿½ï¿½ ï¿½Ã°ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ù¸ï¿½
 
-        // ÀûÀÇ À§Ä¡¸¦ ¾à°£ ÀÌµ¿½ÃÄÑ ¹ßÆÇ ³¡¿¡¼­ ¹þ¾î³ª°Ô ÇÔ
+        // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¡ï¿½ï¿½ ï¿½à°£ ï¿½Ìµï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½î³ªï¿½ï¿½ ï¿½ï¿½
         float adjustment = movingRight ? 0.2f : -0.2f;
         transform.position = new Vector2(transform.position.x + adjustment, transform.position.y);
 
-        // ¹æÇâ ÀüÈ¯
+        // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¯
         movingRight = !movingRight;
         transform.eulerAngles = new Vector3(0, movingRight ? 0 : 180, 0);
 
@@ -101,7 +108,7 @@ public class EnemyFireball : MonoBehaviour
             particle.transform.position = fireposition;
             particle.transform.rotation = transform.rotation;
             particle.SetActive(true);
-            StartCoroutine(DestroyAfterTime(particle, particleLifetime)); // 2ÃÊ ÈÄ¿¡ ºñÈ°¼ºÈ­
+            StartCoroutine(DestroyAfterTime(particle, particleLifetime)); // 2ï¿½ï¿½ ï¿½Ä¿ï¿½ ï¿½ï¿½È°ï¿½ï¿½È­
         }
     }
 
@@ -114,7 +121,7 @@ public class EnemyFireball : MonoBehaviour
         }
         else
         {
-            // °´Ã¼ Ç®ÀÌ ºñ¾î ÀÖÀ¸¸é »õ·Î¿î °´Ã¼ »ý¼º
+            // ï¿½ï¿½Ã¼ Ç®ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Î¿ï¿½ ï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½ï¿½
             return Instantiate(fireParticlePrefab);
         }
     }
@@ -127,16 +134,16 @@ public class EnemyFireball : MonoBehaviour
 
     IEnumerator DestroyAfterTime(GameObject obj, float delay)
     {
-        // ÀÏÁ¤ ½Ã°£ µ¿¾È ´ë±â
+        // ï¿½ï¿½ï¿½ï¿½ ï¿½Ã°ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
         yield return new WaitForSeconds(delay);
 
-        // ÆÄÆ¼Å¬À» ºñÈ°¼ºÈ­ÇÏ°í °´Ã¼ Ç®·Î ´Ù½Ã Ãß°¡
+        // ï¿½ï¿½Æ¼Å¬ï¿½ï¿½ ï¿½ï¿½È°ï¿½ï¿½È­ï¿½Ï°ï¿½ ï¿½ï¿½Ã¼ Ç®ï¿½ï¿½ ï¿½Ù½ï¿½ ï¿½ß°ï¿½
         ReturnToPool(obj);
     }
     private IEnumerator Explode()
     {
         isWaiting = true;
-        // Á¡È­ ½Ã 2.5ÃÊ ÈÄ ¹Ý°æ 3mÀÇ Æø¹ß
+        // ï¿½ï¿½È­ ï¿½ï¿½ 2.5ï¿½ï¿½ ï¿½ï¿½ ï¿½Ý°ï¿½ 3mï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         yield return new WaitForSeconds(2.5f);
 
         Vector3 fireposition2 = new Vector3(transform.position.x , transform.position.y - 0.2f, transform.position.z);
@@ -144,7 +151,7 @@ public class EnemyFireball : MonoBehaviour
         GameObject exprosion = Instantiate(exprosionParticlePrefab, transform.position, Quaternion.identity);
         GameObject fire = Instantiate(bigFireParticlePrefab, fireposition2, Quaternion.identity);
 
-        // 1ÃÊ ÈÄ¿¡ particleÀ» »èÁ¦
+        // 1ï¿½ï¿½ ï¿½Ä¿ï¿½ particleï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         Destroy(exprosion, 1f);
         Destroy(fire, 1f);
 
@@ -154,10 +161,28 @@ public class EnemyFireball : MonoBehaviour
         {
             if (hitCollider.CompareTag("Player"))
             {
-                // ¿©±â¼­ Æø¹ß È¿°ú¿Í µ¥¹ÌÁö Àû¿ë               
+                // ï¿½ï¿½ï¿½â¼­ ï¿½ï¿½ï¿½ï¿½ È¿ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½               
             }
         }
-        // ÀÌ ¿ÀºêÁ§Æ®¸¦ ÆÄ±«
+        // ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½Ä±ï¿½
         Destroy(gameObject);
+    }
+
+    public void TakeDamage(float amount, bool damageReduction = true, Vector2 hitDirection = new Vector2(),
+        float knockbackForce = 0)
+    {
+        rb.AddForce(hitDirection * knockbackForce, ForceMode2D.Impulse);    // ë„‰ë°±
+        
+        // ëŒ€ë¯¸ì§€ í”¼í•´ ê³„ì‚°
+        float damage = amount;
+        _currentHP -= damage;
+        
+        if (_currentHP <= 0f)
+        {
+            // ì‚¬ë§ ë¡œì§ ìž‘ì„±
+            Debug.Log("ì  ì‚¬ë§");
+            Destroy(gameObject);
+        }
+        
     }
 }

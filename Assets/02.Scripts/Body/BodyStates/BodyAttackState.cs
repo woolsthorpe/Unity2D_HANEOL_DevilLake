@@ -17,6 +17,7 @@ public class BodyAttackState : IBodyState
         Attack attack = attackPrefab.GetComponent<Attack>();
         attack.attacker = body.gameObject;
         //attack.damage = body. --------------------- ( 대미지 계산법 몰라서 안 써 놓음 )
+        attack.damage = 5f; // 임시
     }
 
     public void Update(Body body)
