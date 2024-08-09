@@ -38,10 +38,6 @@ public class InputManager : MonoBehaviour
 
         InputAsset.Player.Jump.performed += ctx => Jump();
         InputAsset.Player.Dash.performed += ctx => Dash();
-        InputAsset.Player.Attack.performed += ctx => Attack();
-        // 혈기 일반공격 바인딩 후 로직 작성하기.
-        InputAsset.Player.UseWeaponSkill.performed += ctx => WeaponSkill();
-        InputAsset.Player.Interact.performed += ctx => Interact();
     }
     
     private void OnEnable()
