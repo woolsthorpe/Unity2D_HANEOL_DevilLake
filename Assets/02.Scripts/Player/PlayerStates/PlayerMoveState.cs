@@ -23,7 +23,7 @@ public class PlayerMoveState : IPlayerState
         direction.z = 0;
         
         player.TurnCheck(InputManager.Movement);
-        player.transform.position += Time.fixedDeltaTime * player.playerData.eyeMoveSpeed * direction;
+        player.transform.position += Time.fixedDeltaTime * player.playerData.moveSpeed * direction;
     }
 
     public void Exit(Player player)

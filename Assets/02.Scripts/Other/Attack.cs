@@ -6,23 +6,23 @@ using UnityEngine;
 
 public class Attack : MonoBehaviour
 {
-    public float damage;
+    [HideInInspector] public GameObject attacker;
+    [HideInInspector] public float damage;
+    [HideInInspector] public float knockbackForce;
     public Collider2D attackRange;
     public Animator anim;
     
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.TryGetComponent(out Body body)) // 육체이면
+        if (other.gameObject == attacker) // 공격자는 피격하지 않음
         {
-            if (body.parasiticPlayer != null) // 플레이어가 현재 기생한 육체인지 검사
-            {
-                return;
-            }
+            return;
         }
         
         if (other.gameObject.TryGetComponent(out IDamageable damageable))
         {
-            damageable.TakeDamage(damage);
+            Vector2 hitDirection = (other.gameObject.transform.position - attacker.transform.position).normalized;
+            damageable.TakeDamage(damage, true, hitDirection, knockbackForce);
         }
     }
 

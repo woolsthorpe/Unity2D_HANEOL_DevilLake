@@ -5,7 +5,9 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "SO/Player Data")]
 public class PlayerData : ScriptableObject
 {
-    public float eyeMoveSpeed;
-
-    public float gravityScale;      // 중력 배수
+    [Header("Movement Settings")] 
+    public float moveSpeed;         // 이동 속도
+    public float jumpPower;         // 점프 힘
+    public float dashSpeed;         // 대쉬 속도
+    public float dashCoolDown;      // 대쉬 쿨다운
 }

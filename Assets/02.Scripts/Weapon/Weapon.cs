@@ -5,6 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "SO/Weapon")]
 public class Weapon : ScriptableObject
 {
+    [Header("Weapon Info")]
     public string weaponName;
     public string weaponDescription;
     // 공격력 등등 스탯 추가하기.
