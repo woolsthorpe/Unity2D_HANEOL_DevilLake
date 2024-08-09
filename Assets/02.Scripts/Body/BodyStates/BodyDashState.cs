@@ -7,14 +7,17 @@ public class BodyDashState : IBodyState
     public void Enter(Body body)
     {
         body.animator.Play("Belial Body Dash");
+        
+        // 대쉬 속도 계산
+        float dashSpeed = body.parasiticPlayer.playerData.dashSpeed * body.bodyData.moveSpeedPercentage;
 
         if (body.facingRight)
         {
-            body.rb.velocity = new Vector2(body.dashSpeed, 0f);
+            body.rb.velocity = new Vector2(dashSpeed, 0f);
         }
         else
         {
-            body.rb.velocity = new Vector2(-body.dashSpeed, 0f);
+            body.rb.velocity = new Vector2(-dashSpeed, 0f);
         }
     }
 

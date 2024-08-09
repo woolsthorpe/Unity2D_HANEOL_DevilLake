@@ -6,15 +6,16 @@ using UnityEngine.Serialization;
 
 public class Player : MonoBehaviour
 {
-    public PlayerData playerData;               // 플레이어 데이터
     public PlayerStateMachine StateMachine { get; private set; } = new PlayerStateMachine();
-    public SpriteRenderer sr;
+    
+    [Header("Player Info")]
+    public PlayerData playerData;               // 플레이어 데이터
     public CapsuleCollider2D collier;           // 플레이어 콜라이더
     public CircleCollider2D interactionRange;   // 상호작용 범위
-    public Animator animator;
-    public Rigidbody2D rb;
-    public Body body;                           // 육체
-    public Weapon weapon;                       // 혈기 
+    
+    [HideInInspector] public SpriteRenderer sr;
+    [HideInInspector] public Animator animator;
+    [HideInInspector] public Rigidbody2D rb;
 
     [HideInInspector] public Transform currentHostTransform;      // 현재 기생하고 있는 숙주의 위치 정보
     [HideInInspector] public IInteractable currentInteractable;   // 현재 가능한 상호작용 
@@ -24,6 +25,13 @@ public class Player : MonoBehaviour
     private void Start()
     {
         StateMachine.Initialize(this);
+    }
+
+    private void Initialize()
+    {
+        if (!TryGetComponent(out sr)) Debug.LogError($"{sr.GetType()} 찾지 못함.");
+        if (!TryGetComponent(out animator)) Debug.LogError($"{animator.GetType()} 찾지 못함.");
+        if (!TryGetComponent(out rb)) Debug.LogError($"{rb.GetType()} 찾지 못함.");
     }
     
     private void OnEnable()

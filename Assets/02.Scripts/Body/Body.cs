@@ -6,30 +6,33 @@ using UnityEngine.Serialization;
 
 public class Body : MonoBehaviour, IInteractable, IDamageable, IHealable
 {
-    public BodyData bodyData;
     public BodyStateMachine StateMachine { get; private set; } = new BodyStateMachine();
-    public Rigidbody2D rb;
-    public Animator animator;
+    
+    [Header("Body Info")]
+    public BodyData bodyData;
+    
+    [Header("Attack Settings")]
     public GameObject attackPrefab;
     public Transform attackPosition;    // 공격 이펙트 생성 위치
-
-    [Header("Stats")] // 육체 기생할 때 플레이어 스탯과 육체 증가량 스탯을 계산하여 나온 현재 육체의 스탯
-    public float moveSpeed;
-    public float jumpPower;
-    public float dashSpeed;
-
+    
+    [HideInInspector] public Rigidbody2D rb;
+    [HideInInspector] public Animator animator;
+    
     [HideInInspector] public Transform groundCheckTransform;
     [HideInInspector] public bool isGround;
     [HideInInspector] public bool facingRight;
     [HideInInspector] public Player parasiticPlayer;
 
-    public float currentHealth;    // 현재 체력
-    public Weapon currentWeapon;   // 현재 혈기
+    [Header("Runtime Info")]
+    public float currentBodyHealth;    // 현재 체력
+    public Weapon currentWeapon;   // 현재 사용하고 있는 혈기
 
+    private float _dashCoolDownTimer;
 
     private void Start()
     {
         StateMachine.Initialize(this);
+        Initialize();
     }
 
     private void OnEnable()
@@ -56,6 +59,7 @@ public class Body : MonoBehaviour, IInteractable, IDamageable, IHealable
         StateMachine.UpdateState(this);
         Debug.DrawRay(groundCheckTransform.position, Vector3.down * 0.05f, Color.magenta);
 
+        // Fall 상태 체크
         if (!isGround && 
             StateMachine.CurrentState != StateMachine.DisableState &&
             StateMachine.CurrentState != StateMachine.DashState &&
@@ -66,6 +70,9 @@ public class Body : MonoBehaviour, IInteractable, IDamageable, IHealable
                 StateMachine.TransitionToState(StateMachine.FallState, this);
             }
         }
+        
+        // 대쉬 쿨다운
+        _dashCoolDownTimer += Time.deltaTime;
     }
 
     private void FixedUpdate()
@@ -73,6 +80,12 @@ public class Body : MonoBehaviour, IInteractable, IDamageable, IHealable
         StateMachine.FixedUpdateState(this);
 
         IsGrounded(); // 바닥 체크 
+    }
+
+    public void Initialize()
+    {
+        if (!TryGetComponent(out animator)) Debug.LogError($"{animator.GetType()} 찾지 못함.");
+        if (!TryGetComponent(out rb)) Debug.LogError($"{rb.GetType()} 찾지 못함.");
     }
     
     public void Interact(Player player)
@@ -85,21 +98,28 @@ public class Body : MonoBehaviour, IInteractable, IDamageable, IHealable
         // 육체 기생 로직
         parasiticPlayer = player;
         player.currentHostTransform = transform;    // 위치 정보 참조
-        // 육체 능력치 적용 로직 작성
         player.StateMachine.TransitionToState(player.StateMachine.ParasiticState, player);
         StateMachine.TransitionToState(StateMachine.AwakeState, this);
+        
+        // 육체 능력치 적용(초기화) 로직
+        _dashCoolDownTimer = parasiticPlayer.playerData.dashCoolDown;   // 대쉬 쿨다운 초기화
+        currentBodyHealth = bodyData.maxBodyHealth;                     // 체력 초기화
+        
+        // 출혈 코루틴 재생 
+        StartCoroutine(Bleed());
     }
 
     public void EndParasitic(Player player)
     {
+        // 육체 기생 해제 로직
         parasiticPlayer = null;
         player.currentHostTransform = null;    // 위치 정보 해제
-        // 육체 능력치 적용 해제 로직 작성
         player.StateMachine.TransitionToState(player.StateMachine.IdleState, player);
     }
 
     public void OnJump()
     {
+        // 트랜지션 가능한 상태 체크
         if (isGround && 
             StateMachine.CurrentState != StateMachine.DisableState && 
             StateMachine.CurrentState != StateMachine.AwakeState &&
@@ -111,17 +131,22 @@ public class Body : MonoBehaviour, IInteractable, IDamageable, IHealable
 
     public void OnDash()
     {
+        // 트랜지션 가능한 상태 체크
         if (StateMachine.CurrentState != StateMachine.DisableState &&
             StateMachine.CurrentState != StateMachine.AwakeState)
         {
-            StateMachine.TransitionToState(StateMachine.DashState, this);
+            // 대쉬 쿨다운 체크
+            if (_dashCoolDownTimer >= parasiticPlayer.playerData.dashCoolDown)
+            {
+                _dashCoolDownTimer = 0f;
+                StateMachine.TransitionToState(StateMachine.DashState, this);
+            }
         }
     }
     
     public void OnAttack()
     {
-        // 비활성화, 어웨이크, 사망, 공격, 히트, 착지, 혈기 공격, 혈기 스킬 상태가 아닐 때 상태 전환 
-        // == 무브, 점프, 폴, 아이들 일때만 전환 가능 
+        // 트랜지션 가능한 상태 체크
         // ( 이외 대쉬 점프 등도 if문 반전 사용하기. )
         if (StateMachine.CurrentState == StateMachine.IdleState ||
             StateMachine.CurrentState == StateMachine.MoveState ||
@@ -181,10 +206,26 @@ public class Body : MonoBehaviour, IInteractable, IDamageable, IHealable
         transform.localScale = newScale;
     }
 
-    public void TakeDamage(float amount)
+    public void TakeDamage(float amount, bool damageReduction = true, Vector2 hitDirection = new Vector2(), float knockbackForce = 0f)
     {
-        currentHealth -= amount;
-        if (currentHealth <= 0f)
+        // 상태 트랜지션
+        StateMachine.TransitionToState(StateMachine.HitState, this);
+        
+        rb.AddForce(hitDirection * knockbackForce, ForceMode2D.Impulse);    // 넉백
+        
+        // 대미지 피해 계산
+        float damage;
+        if (damageReduction)
+        {
+            damage = amount * bodyData.damageReductionPercentage;
+        }
+        else
+        {
+            damage = amount;
+        }
+        
+        currentBodyHealth -= damage;
+        if (currentBodyHealth <= 0f)
         {
             // 사망
             StateMachine.TransitionToState(StateMachine.DieState, this);
@@ -193,10 +234,42 @@ public class Body : MonoBehaviour, IInteractable, IDamageable, IHealable
 
     public void Heal(float amount)
     {
-        currentHealth += amount;
-        if (currentHealth > bodyData.maxBlood) // 최대체력 보다 체력이 많으면
+        currentBodyHealth += amount;
+        if (currentBodyHealth > bodyData.maxBodyHealth) // 최대체력 보다 체력이 많으면
         {
-            currentHealth = bodyData.maxBlood;
+            currentBodyHealth = bodyData.maxBodyHealth;
+        }
+    }
+
+    public void SetRandomBodyStats()
+    {
+        // 육체 능력치 랜덤 설정
+        
+    }
+
+    private IEnumerator Bleed()
+    {
+        int tryNum = 0;
+        
+        // 출혈 1 당 걸리는 시간 계산
+        float secondsPerBleed;
+        secondsPerBleed = 1.0f / bodyData.bleedTime;
+        WaitForSeconds waitForSeconds = new WaitForSeconds(secondsPerBleed);
+
+        // 육체 살아있는 동안 지속 출혈
+        while (StateMachine.CurrentState != StateMachine.DieState)
+        {
+            // 무한 반복 예외 처리
+            if (tryNum >= 10000)
+            {
+                break;
+            }
+
+            // 다음 1 출혈까지 걸리는 시간 계산 
+            yield return waitForSeconds;
+
+            // 1 출혈 피해 적용
+            TakeDamage(1f, false);
         }
     }
 }

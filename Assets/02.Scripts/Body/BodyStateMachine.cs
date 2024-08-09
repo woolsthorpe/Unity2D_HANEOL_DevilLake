@@ -13,6 +13,7 @@ public class BodyStateMachine
     public BodyLandingState LandingState { get; private set; } = new BodyLandingState();
     public BodyDashState DashState { get; private set; } = new BodyDashState();
     public BodyAttackState AttackState { get; private set; } = new BodyAttackState();
+    public BodyHitState HitState { get; private set; } = new BodyHitState();
     public BodyDieState DieState { get; private set; } = new BodyDieState();
 
     public void Initialize(Body body)
