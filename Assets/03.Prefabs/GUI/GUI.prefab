@@ -961,9 +961,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8959855839680974416}
-  - component: {fileID: 4241644357048897317}
   m_Layer: 0
-  m_Name: HUD
+  m_Name: UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -987,58 +986,6 @@ Transform:
   - {fileID: 4069673267214145570}
   m_Father: {fileID: 5660103055083755679}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4241644357048897317
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3059150027135232996}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 832b41523e5000a45a68fedc30f73957, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHeadlth: 90
-  currentHealth: 60
-  currentLavelCount: 1
-  currentLavelPoint: 0
-  hpBar: {fileID: 9120194994213099410}
-  maxHpImageSize: {x: 1024, y: 200}
-  hpFlowSpeed: 0.25
-  hpText: {fileID: 7887799756463205469}
-  hpChangeTime: 0.1
-  hpChangeCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 2
-      outSlope: 2
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  growLavel_Bar: {fileID: 8540712128758389003}
-  currentLavel_Text: {fileID: 860575203533332353}
-  PausePanel: {fileID: 1084865568568049283}
-  virtualCamera: {fileID: 0}
-  shakeIntencity: 2
-  shakeTime: 0.6
-  shakeFrequency: 0.1
 --- !u!1 &3145121888041525866
 GameObject:
   m_ObjectHideFlags: 0
@@ -2485,7 +2432,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &695796723728866532
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2493,8 +2440,8 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7634484893141824474}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.19201314}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2503,7 +2450,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -39.178192, y: -23.363031}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
 --- !u!223 &8764824041966831306
@@ -2582,10 +2529,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeImage: {fileID: 8645277166821698001}
-  fadingTime: 0
+  fadingTime: 0.8
   fadeCurve:
     serializedVersion: 2
-    m_Curve: []
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
@@ -2598,6 +2563,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5660103055083755679}
+  - component: {fileID: 4975653997703740548}
   m_Layer: 0
   m_Name: GUI
   m_TagString: Untagged
@@ -2618,10 +2584,63 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 695796723728866532}
   - {fileID: 8959855839680974416}
+  - {fileID: 695796723728866532}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4975653997703740548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7678258705090424899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 832b41523e5000a45a68fedc30f73957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerUI: {fileID: 3059150027135232996}
+  maxHeadlth: 90
+  currentHealth: 60
+  currentLavelCount: 1
+  currentLavelPoint: 0
+  hpBar: {fileID: 9120194994213099410}
+  maxHpImageSize: {x: 1024, y: 200}
+  hpFlowSpeed: 0.25
+  hpText: {fileID: 7887799756463205469}
+  hpChangeTime: 0.1
+  hpChangeCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  growLavel_Bar: {fileID: 8540712128758389003}
+  currentLavel_Text: {fileID: 860575203533332353}
+  PausePanel: {fileID: 1084865568568049283}
+  virtualCamera: {fileID: 0}
+  shakeIntencity: 2
+  shakeTime: 0.6
+  shakeFrequency: 0.1
 --- !u!1 &8139455848919988446
 GameObject:
   m_ObjectHideFlags: 0

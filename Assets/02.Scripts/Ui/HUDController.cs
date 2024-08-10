@@ -5,11 +5,12 @@ using UnityEngine.UI;
 using TMPro;
 using Cinemachine;
 using Unity.VisualScripting;
+using UnityEngine.SceneManagement;
 
 public class HUDController : MonoBehaviour
 {
     public static HUDController instance { get; private set; }
-
+    [SerializeField] private GameObject playerUI;
     public float maxHeadlth=90f;
     public float currentHealth=60f;
 
@@ -58,33 +59,25 @@ public class HUDController : MonoBehaviour
     {
         PausePanel.SetActive(false);
 
-       
-        if (virtualCamera == null)
+       if(SceneManager.GetActiveScene().name !="Start")
         {
-            virtualCamera = GameObject.FindObjectOfType(typeof(CinemachineVirtualCamera)).
-                GetComponent<CinemachineVirtualCamera>();
+            if (virtualCamera == null)
+            {
+                virtualCamera = GameObject.FindObjectOfType(typeof(CinemachineVirtualCamera)).
+                    GetComponent<CinemachineVirtualCamera>();
+            }
+            //시내머신 Virtual Camera -> Noise ->60Shake변경
+            multiChannelPerlin = virtualCamera.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
         }
-        //시내머신 Virtual Camera -> Noise ->60Shake변경
-        multiChannelPerlin = virtualCamera.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
+        
     }
 
     private void Update()
     {
-        //테스트 용도
-        //if (UnityEngine.Input.GetKeyDown(KeyCode.E))
-        //{
-        //    ChangeHpBar(currentHealth + 10, maxHeadlth);
-        //}
-        //if (UnityEngine.Input.GetKeyDown(KeyCode.Q))
-        //{
-        //    ChangeHpBar(currentHealth - 10, maxHeadlth);
-        //}
-
-        //if(UnityEngine.Input.GetKeyDown(KeyCode.W))
-        //{
-        //    ShakeCamera(shakeIntencity,shakeTime);
-        //}
-        //
+        if (SceneManager.GetActiveScene().name == "Start")
+            playerUI.SetActive(false);
+        else
+            playerUI.SetActive(true);
 
         HpImageFlow();
 

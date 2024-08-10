@@ -177,6 +177,7 @@ public class Body : MonoBehaviour, IInteractable, IDamageable, IHealable
         {
             LayerMask layerMask = LayerMask.GetMask("Ground");
             isGround = Physics2D.Raycast(groundCheckTransform.position, Vector3.down, 0.05f, layerMask);
+           
         }
     }
 
