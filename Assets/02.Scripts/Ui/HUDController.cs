@@ -31,11 +31,20 @@ public class HUDController : MonoBehaviour
     [SerializeField] private Image growLavel_Bar;
     [SerializeField] private TextMeshProUGUI currentLavel_Text;
 
+    [Space(5)]
+    [Header("Skill bar")]
+    [SerializeField] private Animator skillAnimator;
+    [SerializeField] private Image[] IcornOfWeaporn;
+    [SerializeField] private float swapSpeed=2;
+
+    [Space(5)]
+
     [Header("Pause Screen")]
     [SerializeField] private GameObject PausePanel;
     //[SerializeField] private 
 
     [Space(5)]
+    [Header("Camera Shake")]
     [SerializeField]private CinemachineVirtualCamera virtualCamera;
     private CinemachineBasicMultiChannelPerlin multiChannelPerlin;
     [SerializeField] private float shakeIntencity;
@@ -79,6 +88,7 @@ public class HUDController : MonoBehaviour
         else
             playerUI.SetActive(true);
 
+
         HpImageFlow();
 
         if(shakeTimer>0f)
@@ -90,6 +100,15 @@ public class HUDController : MonoBehaviour
 
         }
         
+
+        //if(Input.GetKeyDown(KeyCode.Q))
+        //{
+        //    SkillChange("Spear");
+        //}
+        //if (Input.GetKeyDown(KeyCode.E))
+        //{
+        //    SkillChange("Sword");
+        //}
 
     }
 
@@ -103,9 +122,9 @@ public class HUDController : MonoBehaviour
         }
            
 
-        if(changeHp<currentHealth)
+        if(changeHp<currentHealth && currentHealth-changeHp>1)
         {
-            //피격효과
+            ShakeCamera(shakeIntencity,shakeTime);
         }
         else if(changeHp>=currentHealth)
         {
@@ -205,9 +224,29 @@ public class HUDController : MonoBehaviour
 
     }
 
-    public void SkillChange()
+    public void SkillChange(string weapornName)
     {
+        skillAnimator.speed = swapSpeed;
 
+        if (weapornName =="Spear" && IcornOfWeaporn[0].transform.GetSiblingIndex()==0)
+        {
+            IcornOfWeaporn[0].transform.SetSiblingIndex(1);
+            IcornOfWeaporn[1].transform.SetSiblingIndex(0);
+            skillAnimator.SetBool("SwapSpear",true);
+            skillAnimator.SetBool("SwapSword",false);
+        }
+        else if(weapornName =="Sword" && IcornOfWeaporn[0].transform.GetSiblingIndex() == 1)
+        {
+            IcornOfWeaporn[0].transform.SetSiblingIndex(0);
+            IcornOfWeaporn[1].transform.SetSiblingIndex(1);
+            skillAnimator.SetBool("SwapSpear", false);
+            skillAnimator.SetBool("SwapSword", true);
+        }
+        else
+        {
+            Debug.Log($"{weapornName}에 해당하는 이름이 없습니다");
+        }
+       
     }
 
     public void ShakeCamera(float intensity,float time)
