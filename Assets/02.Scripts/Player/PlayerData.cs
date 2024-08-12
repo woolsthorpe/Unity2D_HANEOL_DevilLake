@@ -10,4 +10,5 @@ public class PlayerData : ScriptableObject
     public float jumpPower;         // 점프 힘
     public float dashSpeed;         // 대쉬 속도
     public float dashCoolDown;      // 대쉬 쿨다운
+    public float aliveTime;         // 육체없이 살아있을 수 있는 시간
 }

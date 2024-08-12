@@ -16,9 +16,12 @@ MonoBehaviour:
   bodyDescription: 
   maxBodyHealth: 100
   extractedBloodAmount: 0
-  bleedTime: 0.7
+  bleedTime: 30
   bonusDamagePercentage: 0
   damageReductionPercentage: 1
-  attackSpeedPercentage: 0
+  attackSpeedPercentage: 1
   moveSpeedPercentage: 1
-  getableWeapons: []
+  getableWeapons:
+  - {fileID: 11400000, guid: 1d46f9b16c25cee4992586c5c9f5cd07, type: 2}
+  - {fileID: 11400000, guid: 24ba5a7bdc0176745b689bde2cce2ac4, type: 2}
+  - {fileID: 11400000, guid: bf24fcd1b0d4f2b43ada4f556af83738, type: 2}

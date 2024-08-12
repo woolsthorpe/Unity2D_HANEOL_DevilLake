@@ -9,12 +9,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7419332598628308943}
-  - component: {fileID: 4595789663108397556}
   - component: {fileID: 848746527737212384}
   - component: {fileID: 6478953307961736228}
   - component: {fileID: -1716934453318827615}
+  - component: {fileID: 4595789663108397556}
   m_Layer: 0
-  m_Name: Player Normal Attack
+  m_Name: Test Weapon Attack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29,28 +29,12 @@ Transform:
   m_GameObject: {fileID: 8494976473963476850}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -1.7, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4595789663108397556
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8494976473963476850}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59b2c793e0574ea429775474b0b6ae54, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attacker: {fileID: 0}
-  damage: 0
-  attackRange: {fileID: 6478953307961736228}
-  anim: {fileID: 848746527737212384}
 --- !u!95 &848746527737212384
 Animator:
   serializedVersion: 5
@@ -159,3 +143,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &4595789663108397556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8494976473963476850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59b2c793e0574ea429775474b0b6ae54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attacker: {fileID: 0}
+  damage: 0
+  knockbackForce: 0
+  attackRange: {fileID: 6478953307961736228}
+  anim: {fileID: 848746527737212384}

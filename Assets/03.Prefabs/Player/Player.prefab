@@ -223,10 +223,12 @@ MonoBehaviour:
   playerData: {fileID: 11400000, guid: a8d2736859a9b6045a11f267362ab714, type: 2}
   collier: {fileID: 7176831400483150793}
   interactionRange: {fileID: 3439069581245628101}
+  initialBody: {fileID: 0}
   sr: {fileID: 7425428920658812985}
   animator: {fileID: 354970015584300011}
   rb: {fileID: 3511461108508712768}
-  currentHostTransform: {fileID: 0}
+  currentHostBody: {fileID: 0}
+  aliveTimeTimer: 0
 --- !u!1 &2726685225413180125
 GameObject:
   m_ObjectHideFlags: 0

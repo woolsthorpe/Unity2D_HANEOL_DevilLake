@@ -5,6 +5,7 @@ public class PlayerStateMachine
     public PlayerIdleState IdleState { get; private set; } = new PlayerIdleState();
     public PlayerMoveState MoveState { get; private set; } = new PlayerMoveState();
     public PlayerParasiticState ParasiticState { get; private set; } = new PlayerParasiticState();
+    public PlayerDieState DieState { get; private set; } = new PlayerDieState();
 
     public void Initialize(Player player)
     {

@@ -20,7 +20,6 @@ public class InputManager : MonoBehaviour
     public static event KeyAction OnJump;
     public static event KeyAction OnDash;
     public static event KeyAction OnAttack;
-    public static event KeyAction OnWeaponAttack;
     public static event KeyAction OnWeaponSkill;
     public static event KeyAction OnInteract;
 
@@ -65,11 +64,6 @@ public class InputManager : MonoBehaviour
     private void Attack()
     {
         OnAttack?.Invoke();
-    }
-    
-    private void WeaponAttack()
-    {
-        OnWeaponAttack?.Invoke();
     }
     
     private void WeaponSkill()

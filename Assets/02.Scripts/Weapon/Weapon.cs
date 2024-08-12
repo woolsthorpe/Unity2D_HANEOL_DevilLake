@@ -9,7 +9,7 @@ public class Weapon : ScriptableObject
     public string weaponName;
     public string weaponDescription;
     // 공격력 등등 스탯 추가하기.
-    public WeaponAttack weaponAttack;   // 혈기 일반공격
+    public WeaponAttack weaponAttack;   // 기본 공격
     public WeaponSkill weaponSkill;     // 혈기술
 
     public void Attack()

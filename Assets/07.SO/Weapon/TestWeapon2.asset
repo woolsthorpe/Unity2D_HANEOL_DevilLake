@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31a24b5b5d197af4abbb5c253f441333, type: 3}
-  m_Name: Test PlayerData
+  m_Script: {fileID: 11500000, guid: 4a19cbca577413d458ad32a4b78810b8, type: 3}
+  m_Name: TestWeapon2
   m_EditorClassIdentifier: 
-  moveSpeed: 5
-  jumpPower: 600
-  dashSpeed: 12.5
-  dashCoolDown: 1
+  weaponName: 2
+  weaponDescription: 
+  weaponAttack: {fileID: 0}
+  weaponSkill: {fileID: 0}

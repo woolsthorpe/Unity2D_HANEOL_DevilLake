@@ -8,6 +8,7 @@ public class PlayerParasiticState : IPlayerState
     {
         player.sr.enabled = false;
         player.collier.enabled = false;
+        player.aliveTimeTimer = 0f;         // 육체없이 있던 시간 초기화
     }
 
     public void Update(Player player)
@@ -17,7 +18,7 @@ public class PlayerParasiticState : IPlayerState
 
     public void FixedUpdate(Player player)
     {
-        player.transform.position = player.currentHostTransform.position;
+        player.transform.position = player.currentHostBody.gameObject.transform.position;
     }
 
     public void Exit(Player player)

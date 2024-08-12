@@ -25,7 +25,7 @@ public class BodyStateMachine
     {
         CurrentState?.Exit(body);
         CurrentState = newState;
-        //Debug.Log(CurrentState);
+        Debug.Log(CurrentState);
         CurrentState.Enter(body);
     }
 
