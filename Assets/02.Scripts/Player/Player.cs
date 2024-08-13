@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -23,13 +24,18 @@ public class Player : MonoBehaviour
     public IInteractable currentInteractable;     // 현재 가능한 상호작용 
     public float aliveTimeTimer;                  // 플레이어 육체없이 있던 시간 
     
+    public bool isDamageImmunity;                 // 현재 피해 면역인지 
+    public bool isLakeScene;                      // 본진 씬인지 확인 
+    
     private bool _facingRight = true;
+    private float _damageImmunityTimer;
+
 
     private void Start()
     {
         StateMachine.Initialize(this);
 
-        // 초기 육체 기생 
+        // 초기 육체가 있다면 기생 
         if (initialBody)
         {
             initialBody.StartParasitic(this);
@@ -47,16 +53,51 @@ public class Player : MonoBehaviour
     {
         // 입력 이벤트 구독
         InputManager.OnInteract += OnInteract;
+        
+        // 씬 매니저 이벤트 구독
+        SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
     private void OnDisable()
     {
         InputManager.OnInteract -= OnInteract;
+        
+        SceneManager.sceneLoaded -= OnSceneLoaded;
     }
     
     private void Update()
     {
         StateMachine.UpdateState(this);
+        
+        // 피해 면역 시간 로직
+        if (isDamageImmunity)
+        {
+            // 피해 면역 
+            if (currentHostBody)
+            {
+                currentHostBody.sr.color = new Color(1f, 1f, 1f, 0.5f);
+            }
+            else
+            {
+                sr.color = new Color(1f, 1f, 1f, 0.5f);
+            }
+            
+            _damageImmunityTimer += Time.deltaTime;
+            if (_damageImmunityTimer >= playerData.damageImmunityTime)
+            {
+                // 해제
+                isDamageImmunity = false;
+                _damageImmunityTimer = 0f;
+                if (currentHostBody)
+                {
+                    currentHostBody.sr.color = new Color(1f, 1f, 1f, 1f);
+                }
+                else
+                {
+                    sr.color = new Color(1f, 1f, 1f, 1f);
+                }
+            }
+        }
         
         // 게임오버 로직 
         // 본진이 아닐 때 로직 추가하기.
@@ -82,7 +123,6 @@ public class Player : MonoBehaviour
     // 상호작용 
     public void OnInteract()
     {
-        Debug.Log("Test");
         currentInteractable?.Interact(this);
     }
 
@@ -125,5 +165,10 @@ public class Player : MonoBehaviour
             Debug.Log("상호작용 불가능!");
             currentInteractable = null;
         }
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        isLakeScene = scene.name == "Lake";
     }
 }

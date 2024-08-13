@@ -6,7 +6,7 @@ public class Test_InteractBox : MonoBehaviour,IInteractable
 {
     public void Interact(Player player)
     {
-        Debug.Log("¾À ÀÌµ¿");
+        Debug.Log("ì”¬ ì´ë™");
         ScenceTransition.instance.GoToTower();
     }
 }

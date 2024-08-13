@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponName: 3
   weaponDescription: 
-  weaponAttack: {fileID: 0}
+  weaponAttack: {fileID: 11400000, guid: 484e6b8a6cbc4cf4f9eeded7caff29e6, type: 2}
   weaponSkill: {fileID: 0}

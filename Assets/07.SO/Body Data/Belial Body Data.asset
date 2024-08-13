@@ -16,7 +16,7 @@ MonoBehaviour:
   bodyDescription: 
   maxBodyHealth: 100
   extractedBloodAmount: 0
-  bleedTime: 30
+  bleedTime: 10
   bonusDamagePercentage: 0
   damageReductionPercentage: 1
   attackSpeedPercentage: 1

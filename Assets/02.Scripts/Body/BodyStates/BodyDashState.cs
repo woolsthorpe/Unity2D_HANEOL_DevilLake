@@ -4,9 +4,16 @@ using UnityEngine;
 
 public class BodyDashState : IBodyState
 {
+    private float _gravityValue;
     public void Enter(Body body)
     {
         body.animator.Play("Belial Body Dash");
+        
+        // 중력 값 저장
+        _gravityValue = body.rb.gravityScale;
+        
+        // 중력 0으로 설정
+        body.rb.gravityScale = 0f;
         
         // 대쉬 속도 계산
         float dashSpeed = body.parasiticPlayer.playerData.dashSpeed * body.bodyData.moveSpeedPercentage;
@@ -24,6 +31,10 @@ public class BodyDashState : IBodyState
     public void Update(Body body)
     {
         AnimatorStateInfo stateInfo = body.animator.GetCurrentAnimatorStateInfo(0);
+        if (stateInfo.IsName("Belial Body Dash") && stateInfo.normalizedTime >= 0.5f)
+        {
+            body.rb.gravityScale = _gravityValue;
+        }
         if (stateInfo.IsName("Belial Body Dash") && stateInfo.normalizedTime >= 1.0f)
         {
             body.StateMachine.TransitionToState(body.StateMachine.IdleState, body);

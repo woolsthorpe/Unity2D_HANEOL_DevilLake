@@ -13,12 +13,15 @@ public class Body : MonoBehaviour, IInteractable, IDamageable, IHealable
     public BodyData bodyData;
     
     [HideInInspector] public Rigidbody2D rb;
+    [HideInInspector] public SpriteRenderer sr;
     [HideInInspector] public Animator animator;
     
     [HideInInspector] public Transform groundCheckTransform;
     [HideInInspector] public bool isGround;
     [HideInInspector] public bool facingRight;
     [HideInInspector] public Player parasiticPlayer;
+    [HideInInspector] public bool isDie;
+    [HideInInspector] public Sprite bodyDropSprite;           // 적 몬스터의 사망 애니메이션의 마지막 Sprite
 
     [Header("Runtime Info")]
     public float currentBodyHealth;     // 현재 체력
@@ -84,6 +87,7 @@ public class Body : MonoBehaviour, IInteractable, IDamageable, IHealable
     {
         if (!TryGetComponent(out animator)) Debug.LogError($"{animator.GetType()} 찾지 못함.");
         if (!TryGetComponent(out rb)) Debug.LogError($"{rb.GetType()} 찾지 못함.");
+        if (!TryGetComponent(out sr)) Debug.LogError($"{sr.GetType()} 찾지 못함.");
     }
     
     public void Interact(Player player)
@@ -93,6 +97,11 @@ public class Body : MonoBehaviour, IInteractable, IDamageable, IHealable
 
     public void StartParasitic(Player player)
     {
+        if (isDie)
+        {
+            return;
+        }
+        
         // 육체 기생 로직
         parasiticPlayer = player;
         player.currentHostBody = this;    // 육체 정보 전달 
@@ -223,6 +232,21 @@ public class Body : MonoBehaviour, IInteractable, IDamageable, IHealable
 
     public void TakeDamage(float amount, bool damageReduction = true, Vector2 hitDirection = new Vector2(), float knockbackForce = 0f)
     {
+        // 피해 면역일 땐 대미지를 입히지 않음
+        if (parasiticPlayer.isDamageImmunity)
+        {
+            return;
+        }
+        
+        // 본진일 땐 대미지를 입히지 않음
+        if (parasiticPlayer.isLakeScene)
+        {
+            return;
+        }
+        
+        // 대미지 적용시 피해 면역 적용
+        parasiticPlayer.isDamageImmunity = true;
+        
         // 상태 트랜지션
         StateMachine.TransitionToState(StateMachine.HitState, this);
         
@@ -279,9 +303,17 @@ public class Body : MonoBehaviour, IInteractable, IDamageable, IHealable
         while (StateMachine.CurrentState != StateMachine.DieState)
         {
             // 무한 반복 예외 처리
+            tryNum++;
             if (tryNum >= 10000)
             {
-                break;
+                yield break;
+            }
+            
+            // 본진일 땐 대미지를 입히지 않음
+            if (parasiticPlayer.isLakeScene)
+            {
+                yield return null;
+                continue;
             }
 
             // 다음 1 출혈까지 걸리는 시간 계산 
@@ -293,6 +325,7 @@ public class Body : MonoBehaviour, IInteractable, IDamageable, IHealable
             {
                 // 사망
                 StateMachine.TransitionToState(StateMachine.DieState, this);
+                yield break;
             }
             //UI연동
             HUDController.instance.ChangeHpBar(currentBodyHealth, bodyData.maxBodyHealth);

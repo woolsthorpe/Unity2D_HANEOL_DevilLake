@@ -6,7 +6,7 @@ public class BodyDisableState : IBodyState
 {
     public void Enter(Body body)
     {
-        
+
     }
 
     public void Update(Body body)

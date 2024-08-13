@@ -8,6 +8,10 @@ public class PlayerDieState : IPlayerState
     {
         // 게임 오버 로직 작성 
         Debug.Log("플레이어 사망... 게임오버");
+        player.gameObject.SetActive(false);
+        
+        // 본진으로 이동
+        ScenceTransition.instance.GoToMain();
     }
 
     public void Update(Player player)

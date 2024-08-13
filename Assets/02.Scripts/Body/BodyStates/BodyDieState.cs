@@ -9,6 +9,10 @@ public class BodyDieState : IBodyState
     {
         // Die 애니메이션 재생 로직 작성 
         
+        
+        // 사망 처리
+        body.isDie = true;
+        
         // 플레이어와 육체 분리 로직 작성
         body.EndParasitic(body.parasiticPlayer);
     }

@@ -11,6 +11,7 @@ public class ScenceTransition : MonoBehaviour
     [SerializeField] private Image fadeImage;
     [SerializeField] private float fadingTime;
     [SerializeField] private AnimationCurve fadeCurve;
+    private bool _isSceneChanging;
     private void Awake()
     {
         if (instance == null)
@@ -31,10 +32,16 @@ public class ScenceTransition : MonoBehaviour
 
     public void ChangeScence(string scenceName)
     {
+        if (_isSceneChanging)
+        {
+            return;
+        }
         StartCoroutine(LoadScence(scenceName));
     }
     IEnumerator LoadScence(string name)
     {
+        _isSceneChanging = true;
+            
         AsyncOperation op = SceneManager.LoadSceneAsync(name);
         op.allowSceneActivation = false;
         StartCoroutine(Fade(0,1));
@@ -48,6 +55,7 @@ public class ScenceTransition : MonoBehaviour
         
         StartCoroutine(Fade(1,0));
 
+        _isSceneChanging = false;
     }
     private  IEnumerator Fade(float start,float end)
     {
@@ -83,13 +91,16 @@ public class ScenceTransition : MonoBehaviour
     }
     public void GoToMain()
     {
-        ChangeScence("Main");
+        ChangeScence("Lake");
     }
     public void GameExit()
     {
         StartCoroutine(Fade(0, 1));
         Application.Quit();
     }
-    
 
+    public void Quit()
+    {
+        Application.Quit();
+    }
 }

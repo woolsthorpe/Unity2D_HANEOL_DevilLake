@@ -6,15 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/01.Scene/Test/UITestScene.unity
-    guid: d164a7f05f49c604db43d252dca3629a
-  - enabled: 1
-    path: Assets/01.Scene/Game/Main.unity
-    guid: 8460d72c32c36324fb74dfda6eabbc8b
-  - enabled: 1
     path: Assets/01.Scene/Game/Start.unity
-    guid: 3d4cf3e5dd10a204c9faa8fbbb872110
+    guid: 2064c0be6e7def84aa359a7987ff332a
+  - enabled: 1
+    path: Assets/01.Scene/Game/Lake.unity
+    guid: 8460d72c32c36324fb74dfda6eabbc8b
   - enabled: 1
     path: Assets/01.Scene/Game/Tower.unity
     guid: ed187717529ead744b86d39aa5b38f0b
+  - enabled: 0
+    path: Assets/01.Scene/Test/UITestScene.unity
+    guid: d164a7f05f49c604db43d252dca3629a
+  - enabled: 0
+    path: Assets/01.Scene/Game/Start(Old).unity
+    guid: 3d4cf3e5dd10a204c9faa8fbbb872110
   m_configObjects: {}
