@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/01.Scene/Game/Lake.unity
     guid: 8460d72c32c36324fb74dfda6eabbc8b
   - enabled: 1
-    path: Assets/01.Scene/Game/Tower.unity
+    path: Assets/01.Scene/Game/Tower(Old).unity
     guid: ed187717529ead744b86d39aa5b38f0b
   - enabled: 0
     path: Assets/01.Scene/Test/UITestScene.unity
