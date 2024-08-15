@@ -12,9 +12,10 @@ public class Body : MonoBehaviour, IInteractable, IDamageable, IHealable
     [Header("Body Info")]
     public BodyData bodyData;
     
-    [HideInInspector] public Rigidbody2D rb;
-    [HideInInspector] public SpriteRenderer sr;
-    [HideInInspector] public Animator animator;
+    [Header("Components")]
+    public Rigidbody2D rb;
+    public SpriteRenderer sr;
+    public Animator animator;
     
     [Header("Other")]
     public Collider2D bodyCollider;
@@ -38,25 +39,18 @@ public class Body : MonoBehaviour, IInteractable, IDamageable, IHealable
     private int _curWeaponNum = 1;
     private float _changeWeaponTimer;
     private bool _canChangeWeapon;
-
-    private void Start()
-    {
-        StateMachine.Initialize(this);
-        
-        if (!TryGetComponent(out animator)) Debug.LogError($"{animator.GetType()} 찾지 못함.");
-        if (!TryGetComponent(out rb)) Debug.LogError($"{rb.GetType()} 찾지 못함.");
-        if (!TryGetComponent(out sr)) Debug.LogError($"{sr.GetType()} 찾지 못함.");
-    }
     
     public void Initialize()
     {
+        // 상태 초기화
+        StateMachine.Initialize(this);
+        
         // 육체 초기 이미지 적용
         sr.sprite = bodyDropSprite;
-        Debug.Log(bodyDropSprite);
-        Debug.Log(sr.sprite);
         
         // 육체 초기 이미지에 맞는 콜라이더만 활성화
         bodyCollider.enabled = false;
+
         // 스프라이트의 경계 크기를 사용하여 BoxCollider2D의 크기를 조정
         Bounds spriteBounds = sr.sprite.bounds;
         bodyDropCollider.size = spriteBounds.size;
@@ -142,6 +136,7 @@ public class Body : MonoBehaviour, IInteractable, IDamageable, IHealable
         {
             // 다음 혈기로 혈기 변경 
             currentWeapon = nextWeapon;
+            HUDController.instance.SkillChange(nextWeapon.weaponName);
         
             // 다음 혈기 지정 로직 
             _curWeaponNum++;

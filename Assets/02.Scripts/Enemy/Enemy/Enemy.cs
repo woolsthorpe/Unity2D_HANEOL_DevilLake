@@ -71,9 +71,9 @@ public class Enemy : MonoBehaviour, IDamageable
             dropBodyObject.transform.position = transform.position;
             
             // 육체 스프라이트 전달
-            dropBodyObject.TryGetComponent(out Body body);
+            Body body = dropBodyObject.GetComponent<Body>();
             body.bodyDropSprite = dropBodySprite;
-            
+
             // 육체 초기화
             body.Initialize();
         }

@@ -2,8 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "SO/WeaponSkill/TestWeaponSkill")]
-public class TestWeaponSkill : WeaponSkill
+[CreateAssetMenu(menuName = "SO/WeaponSkill/SwordWeaponSkill")]
+public class SwordWeaponSkill : WeaponSkill
 {
     public override void Use()
     {
