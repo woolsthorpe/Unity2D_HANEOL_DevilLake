@@ -101,18 +101,19 @@ public class Player : MonoBehaviour
         
         // 게임오버 로직 
         // 본진이 아닐 때 로직 추가하기.
-            if (StateMachine.CurrentState != StateMachine.DieState)
+        if (StateMachine.CurrentState != StateMachine.DieState)
+        {
+            if (StateMachine.CurrentState != StateMachine.ParasiticState)   // 기생 중이 아닐 때, 
             {
-                if (StateMachine.CurrentState != StateMachine.ParasiticState)   // 기생 중이 아닐 때, 
+                aliveTimeTimer += Time.deltaTime;
+                HUDController.instance.ChangeHpBar(playerData.aliveTime - aliveTimeTimer, playerData.aliveTime);
+                if (aliveTimeTimer >= playerData.aliveTime)
                 {
-                    aliveTimeTimer += Time.deltaTime;
-                    if (aliveTimeTimer >= playerData.aliveTime)
-                    {
-                        // timer에 deltaTime을 더하여 aliveTime 보다 커지면 플레이어 사망
-                        StateMachine.TransitionToState(StateMachine.DieState, this);
-                    }
+                    // timer에 deltaTime을 더하여 aliveTime 보다 커지면 플레이어 사망
+                    StateMachine.TransitionToState(StateMachine.DieState, this);
                 }
             }
+        }
     }
 
     private void FixedUpdate()

@@ -6,11 +6,29 @@ using UnityEngine;
 
 public class Attack : MonoBehaviour
 {
-    [HideInInspector] public GameObject attacker;
-    [HideInInspector] public float damage;
-    [HideInInspector] public float knockbackForce;
-    public Collider2D attackRange;
-    public Animator anim;
+    public Animator anim;                           // 애니메이터 
+    public Collider2D attackCollider;               // 공격 콜라이더
+    
+    [HideInInspector] public float damage;          // 대미지
+    [HideInInspector] public float knockbackForce;  // 강도
+    [HideInInspector] public GameObject attacker;   // 공격자
+
+    public void Start()
+    {
+        // 프리팹 인스펙터에서 컴포넌트 할당하기.
+        
+        // 기본적으로 인스펙터에서 콜라이더 비활성화 해두기
+    }
+
+    public void StartAttack()
+    {
+        attackCollider.enabled = true;
+    }
+
+    public void EndAttack()
+    {
+        attackCollider.enabled = false;
+    }
     
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -18,18 +36,23 @@ public class Attack : MonoBehaviour
         {
             return;
         }
-        
+
         if (other.gameObject.TryGetComponent(out IDamageable damageable))
         {
-            Vector2 hitDirection = (other.gameObject.transform.position - attacker.transform.position).normalized;
-            damageable.TakeDamage(damage, true, hitDirection, knockbackForce);
+            if (other.gameObject.CompareTag("Enemy"))
+            {
+                Vector2 hitDirection = (other.gameObject.transform.position - attacker.transform.position).normalized;
+                damageable.TakeDamage(damage, true, hitDirection, knockbackForce);
+            }
         }
     }
 
-    private void OnEnable()
+    private void Update()
     {
-        Destroy(gameObject, anim.GetCurrentAnimatorStateInfo(0).length);
+        AnimatorStateInfo stateInfo = anim.GetCurrentAnimatorStateInfo(0);
+        if (stateInfo.normalizedTime >= 1.0f)
+        {
+            Destroy(gameObject);
+        }
     }
-    
-    
 }

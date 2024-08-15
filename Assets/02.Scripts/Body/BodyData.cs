@@ -15,4 +15,5 @@ public class BodyData : ScriptableObject
     public float attackSpeedPercentage;     // 공격 속도 (%)
     public float moveSpeedPercentage;       // 이동 속도 (%)
     public List<Weapon> getableWeapons;     // 얻을 수 있는 혈기 리스트
+    public float changeWeaponDelay = 0.5f;  // 혈기 변경 딜레이 
 }

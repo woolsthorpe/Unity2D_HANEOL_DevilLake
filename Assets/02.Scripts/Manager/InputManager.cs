@@ -22,6 +22,7 @@ public class InputManager : MonoBehaviour
     public static event KeyAction OnAttack;
     public static event KeyAction OnWeaponSkill;
     public static event KeyAction OnInteract;
+    public static event KeyAction OnChangeWeapon;
 
     private void Awake()
     {
@@ -39,6 +40,7 @@ public class InputManager : MonoBehaviour
         InputAsset.Player.Dash.performed += ctx => Dash();
         InputAsset.Player.Interact.performed += ctx => Interact();
         InputAsset.Player.Attack.performed += ctx => Attack();
+        InputAsset.Player.ChangeWeapon.performed += ctx => ChangeWeapon();
     }
     
     private void OnEnable()
@@ -74,5 +76,10 @@ public class InputManager : MonoBehaviour
     private void Interact()
     {
         OnInteract?.Invoke();
+    }
+    
+    private void ChangeWeapon()
+    {
+        OnChangeWeapon?.Invoke();
     }
 }

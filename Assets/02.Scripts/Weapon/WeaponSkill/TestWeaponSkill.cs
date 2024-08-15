@@ -16,12 +16,13 @@ public class TestWeaponSkill : WeaponSkill
         }
         
         // 스킬 공격 프리팹 생성
-        body.InstantiateAttack(body.currentWeapon.weaponSkill.skillAttackPrefab, body.transform);
+        GameObject attackObject = Instantiate(body.currentWeapon.weaponAttack.attackPrefab, body.transform);
         
         // 공격 정보 전달
-        Attack attack = skillAttackPrefab.GetComponent<Attack>();
+        Attack attack = attackObject.GetComponent<Attack>();
         attack.attacker = body.gameObject;                                                                  // 공격자 전달
         attack.anim.speed = body.bodyData.attackSpeedPercentage;                                            // 공격 속도
         attack.damage = body.currentWeapon.weaponSkill.damage * body.bodyData.bonusDamagePercentage;        // 대미지 계산
+        attack.knockbackForce = body.currentWeapon.weaponSkill.knockbackForce;                              // 강도 
     }
 }

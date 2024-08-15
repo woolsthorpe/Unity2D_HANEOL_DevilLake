@@ -87,7 +87,7 @@ public class ScenceTransition : MonoBehaviour
     }
     public void GoToTower()
     {
-        ChangeScence("Tower");
+        ChangeScence("Level");
     }
     public void GoToMain()
     {

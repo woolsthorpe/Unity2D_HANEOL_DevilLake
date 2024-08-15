@@ -46,7 +46,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 314f4598df106d741856ef841a443b88, type: 2}
+  m_Motion: {fileID: 7400000, guid: 3c7546333e77bcd4e95014f761a50e31, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -160,7 +160,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Belial Body Landing
-  m_Speed: 2
+  m_Speed: 2.125
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []

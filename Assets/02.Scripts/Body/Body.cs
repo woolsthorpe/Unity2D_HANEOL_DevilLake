@@ -16,24 +16,52 @@ public class Body : MonoBehaviour, IInteractable, IDamageable, IHealable
     [HideInInspector] public SpriteRenderer sr;
     [HideInInspector] public Animator animator;
     
-    [HideInInspector] public Transform groundCheckTransform;
+    [Header("Other")]
+    public Collider2D bodyCollider;
+    public Collider2D interactCollider;
+    public Transform groundCheckTransform;
+    
     [HideInInspector] public bool isGround;
     [HideInInspector] public bool facingRight;
     [HideInInspector] public Player parasiticPlayer;
     [HideInInspector] public bool isDie;
     [HideInInspector] public Sprite bodyDropSprite;           // 적 몬스터의 사망 애니메이션의 마지막 Sprite
+    public BoxCollider2D bodyDropCollider;     // 육체 드롭 스프라이트에 딱 맞는 콜라이더 
 
     [Header("Runtime Info")]
     public float currentBodyHealth;     // 현재 체력
     public List<Weapon> weapons;        // 가지고 있는 혈기 리스트
     public Weapon currentWeapon;        // 현재 사용하고 있는 혈기
+    public Weapon nextWeapon;           // 전환시 등잘할 다음 혈기 
 
     private float _dashCoolDownTimer;
+    private int _curWeaponNum = 1;
+    private float _changeWeaponTimer;
+    private bool _canChangeWeapon;
 
     private void Start()
     {
         StateMachine.Initialize(this);
-        Initialize();
+        
+        if (!TryGetComponent(out animator)) Debug.LogError($"{animator.GetType()} 찾지 못함.");
+        if (!TryGetComponent(out rb)) Debug.LogError($"{rb.GetType()} 찾지 못함.");
+        if (!TryGetComponent(out sr)) Debug.LogError($"{sr.GetType()} 찾지 못함.");
+    }
+    
+    public void Initialize()
+    {
+        // 육체 초기 이미지 적용
+        sr.sprite = bodyDropSprite;
+        Debug.Log(bodyDropSprite);
+        Debug.Log(sr.sprite);
+        
+        // 육체 초기 이미지에 맞는 콜라이더만 활성화
+        bodyCollider.enabled = false;
+        // 스프라이트의 경계 크기를 사용하여 BoxCollider2D의 크기를 조정
+        Bounds spriteBounds = sr.sprite.bounds;
+        bodyDropCollider.size = spriteBounds.size;
+        bodyDropCollider.offset = Vector2.zero;
+        bodyDropCollider.enabled = true;
     }
 
     private void OnEnable()
@@ -41,9 +69,9 @@ public class Body : MonoBehaviour, IInteractable, IDamageable, IHealable
         // 입력 이벤트 구독
         InputManager.OnJump += OnJump;
         InputManager.OnDash += OnDash;
-        InputManager.OnAttack += OnAttack;
-        // 혈기 일반공격 이벤트 로직 작성 후 구독하기.
+        InputManager.OnAttack += OnAttack;  // 어택이 곧 혈기공격 
         InputManager.OnWeaponSkill += OnWeaponSkill;
+        InputManager.OnChangeWeapon += OnChangeWeapon;
     }
 
     private void OnDisable()
@@ -51,8 +79,8 @@ public class Body : MonoBehaviour, IInteractable, IDamageable, IHealable
         InputManager.OnJump -= OnJump;
         InputManager.OnDash -= OnDash;
         InputManager.OnAttack -= OnAttack;
-        // 혈기 일반공격 이벤트 로직 작성 후 구독 해제하기.
         InputManager.OnWeaponSkill -= OnWeaponSkill;
+        InputManager.OnChangeWeapon -= OnChangeWeapon;
     }
 
     private void Update()
@@ -74,6 +102,14 @@ public class Body : MonoBehaviour, IInteractable, IDamageable, IHealable
         
         // 대쉬 쿨다운
         _dashCoolDownTimer += Time.deltaTime;
+        
+        // 혈기 변경 딜레이
+        _changeWeaponTimer += Time.deltaTime;
+        if (!_canChangeWeapon && _changeWeaponTimer >= bodyData.changeWeaponDelay)
+        {
+            _changeWeaponTimer = 0f;
+            _canChangeWeapon = true;
+        }
     }
 
     private void FixedUpdate()
@@ -82,17 +118,42 @@ public class Body : MonoBehaviour, IInteractable, IDamageable, IHealable
 
         IsGrounded(); // 바닥 체크 
     }
-
-    public void Initialize()
-    {
-        if (!TryGetComponent(out animator)) Debug.LogError($"{animator.GetType()} 찾지 못함.");
-        if (!TryGetComponent(out rb)) Debug.LogError($"{rb.GetType()} 찾지 못함.");
-        if (!TryGetComponent(out sr)) Debug.LogError($"{sr.GetType()} 찾지 못함.");
-    }
     
     public void Interact(Player player)
     {
+        // 해당 육체가 죽었으면 안되고
+        if (isDie)
+        {
+            return;
+        }
+
+        // 해당 육체가 이미 기생한 육체이면 안됨
+        if (player.currentHostBody == this)
+        {
+            return;
+        }
+        
         StartParasitic(player);
+    }
+
+    public void OnChangeWeapon()
+    {
+        if (_canChangeWeapon)
+        {
+            // 다음 혈기로 혈기 변경 
+            currentWeapon = nextWeapon;
+        
+            // 다음 혈기 지정 로직 
+            _curWeaponNum++;
+            if (_curWeaponNum >= weapons.Count)
+            {
+                _curWeaponNum = 0;
+            }
+            nextWeapon = weapons[_curWeaponNum];
+
+            // 딜레이 적용
+            _canChangeWeapon = false;
+        }
     }
 
     public void StartParasitic(Player player)
@@ -100,6 +161,12 @@ public class Body : MonoBehaviour, IInteractable, IDamageable, IHealable
         if (isDie)
         {
             return;
+        }
+
+        if (player.currentHostBody != null)
+        {
+            // 현재 갖고 있는 육체가 있었다면 해당 육체 사망 처리
+            player.currentHostBody.StateMachine.TransitionToState(player.currentHostBody.StateMachine.DieState, player.currentHostBody);
         }
         
         // 육체 기생 로직
@@ -128,8 +195,21 @@ public class Body : MonoBehaviour, IInteractable, IDamageable, IHealable
         // 현재 혈기 지정
         currentWeapon = weapons[0];
         
+        // 다음 혈기 지정
+        if (weapons.Count == 1)
+        {
+            nextWeapon = weapons[0];
+        }
+        else
+        {
+            nextWeapon = weapons[1];
+        }
+        
         // 출혈 코루틴 재생 
         StartCoroutine(Bleed());
+        
+        // 체력 UI연동
+        HUDController.instance.ChangeHpBar(currentBodyHealth, bodyData.maxBodyHealth);
     }
 
     public void EndParasitic(Player player)
@@ -203,11 +283,6 @@ public class Body : MonoBehaviour, IInteractable, IDamageable, IHealable
            
         }
     }
-
-    public GameObject InstantiateAttack(GameObject prefab, Transform parent = null)
-    {
-        return Instantiate(prefab, parent);
-    }
     
     public void TurnCheck(Vector2 moveInput)
     {
@@ -250,7 +325,8 @@ public class Body : MonoBehaviour, IInteractable, IDamageable, IHealable
         // 상태 트랜지션
         StateMachine.TransitionToState(StateMachine.HitState, this);
         
-        rb.AddForce(hitDirection * knockbackForce, ForceMode2D.Impulse);    // 넉백
+        // 넉백
+        rb.AddForce(hitDirection * knockbackForce, ForceMode2D.Impulse);   
         
         // 대미지 피해 계산
         float damage;
@@ -327,8 +403,13 @@ public class Body : MonoBehaviour, IInteractable, IDamageable, IHealable
                 StateMachine.TransitionToState(StateMachine.DieState, this);
                 yield break;
             }
-            //UI연동
+            // 체력 UI연동
             HUDController.instance.ChangeHpBar(currentBodyHealth, bodyData.maxBodyHealth);
         }
+    }
+
+    public void DestroyBody()
+    {
+        Destroy(gameObject);
     }
 }

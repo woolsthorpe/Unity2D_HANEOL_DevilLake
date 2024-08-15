@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7176831400483150793}
   - component: {fileID: 3439069581245628101}
   - component: {fileID: 3981980718403397418}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -229,6 +229,8 @@ MonoBehaviour:
   rb: {fileID: 3511461108508712768}
   currentHostBody: {fileID: 0}
   aliveTimeTimer: 0
+  isDamageImmunity: 0
+  isLakeScene: 0
 --- !u!1 &2726685225413180125
 GameObject:
   m_ObjectHideFlags: 0

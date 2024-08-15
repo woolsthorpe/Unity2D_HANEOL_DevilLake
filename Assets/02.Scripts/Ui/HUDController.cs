@@ -75,7 +75,7 @@ public class HUDController : MonoBehaviour
                 virtualCamera = GameObject.FindObjectOfType(typeof(CinemachineVirtualCamera)).
                     GetComponent<CinemachineVirtualCamera>();
             }
-            //�ó��ӽ� Virtual Camera -> Noise ->60Shake����
+            //시내머신 Virtual Camera -> Noise ->60Shake변경
             multiChannelPerlin = virtualCamera.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
         }
         
@@ -128,7 +128,7 @@ public class HUDController : MonoBehaviour
         }
         else if(changeHp>=currentHealth)
         {
-            //ġ��ȿ��
+            //치유효과
         }
 
 
@@ -161,30 +161,59 @@ public class HUDController : MonoBehaviour
 
         hpBar.rectTransform.sizeDelta = new Vector2(maxHpImageSize.x,Mathf.Clamp(hpBar.rectTransform.sizeDelta.y,0,maxHpImageSize.y));
     }
-    private IEnumerator HpTextCounting(float currentHp,float targetHp)
+    // private IEnumerator HpTextCounting(float currentHp,float targetHp)
+    // {
+    //
+    //     float offset = (targetHp>currentHp)?targetHp-currentHp: currentHp-targetHp;
+    //     offset /= hpChangeTime;
+    //
+    //     float currentTIme = 0.0f;
+    //     float percent = 0.0f;
+    //
+    //     while(percent<1)
+    //     {
+    //       
+    //         currentHp += offset * Time.deltaTime;
+    //
+    //         currentTIme += Time.deltaTime;
+    //         percent = currentTIme / hpChangeTime;
+    //
+    //         hpText.text = string.Format("{0}",(int)currentHp);
+    //         yield return null;
+    //     }
+    //
+    //     currentHp = targetHp;
+    //     hpText.text = string.Format("{0}", (int)currentHp);
+    // }
+    
+    private IEnumerator HpTextCounting(float currentHp, float targetHp)
     {
+        float offset = (targetHp - currentHp) / hpChangeTime; 
+        float currentTime = 0.0f;
 
-        float offset = (targetHp>currentHp)?targetHp-currentHp: currentHp-targetHp;
-        offset /= hpChangeTime;
-
-        float currentTIme = 0.0f;
-        float percent = 0.0f;
-
-        while(percent<1)
+        while (currentTime < hpChangeTime)
         {
-          
-            currentHp += offset * Time.deltaTime;
+            currentTime += Time.deltaTime;
 
-            currentTIme += Time.deltaTime;
-            percent = currentTIme / hpChangeTime;
+            // 목표에 거의 도달한 경우 바로 목표값으로 설정
+            if (Mathf.Abs(targetHp - currentHp) < Mathf.Abs(offset * Time.deltaTime))
+            {
+                currentHp = targetHp;
+            }
+            else
+            {
+                currentHp += offset * Time.deltaTime;
+            }
 
-            hpText.text = string.Format("{0}",(int)currentHp);
+            hpText.text = string.Format("{0}", (int)currentHp); 
             yield return null;
         }
 
+        // 마지막으로 정확한 값으로 설정
         currentHp = targetHp;
         hpText.text = string.Format("{0}", (int)currentHp);
     }
+
 
     private void HpImageFlow()
     {
@@ -244,7 +273,7 @@ public class HUDController : MonoBehaviour
         }
         else
         {
-            Debug.Log($"{weapornName}�� �ش��ϴ� �̸��� �����ϴ�");
+            Debug.Log($"{weapornName}에 해당하는 이름이 없습니다");
         }
        
     }

@@ -85,6 +85,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'Belial Body '
       objectReference: {fileID: 0}
+    - target: {fileID: 3291278968241901728, guid: 4f25399e3f3ea2044ae1340e620665fe, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

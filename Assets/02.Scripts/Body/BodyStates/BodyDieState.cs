@@ -12,9 +12,13 @@ public class BodyDieState : IBodyState
         
         // 사망 처리
         body.isDie = true;
+        body.interactCollider.enabled = false;
         
         // 플레이어와 육체 분리 로직 작성
         body.EndParasitic(body.parasiticPlayer);
+
+        // 육체 삭제
+        body.DestroyBody();
     }
 
     public void Update(Body body)

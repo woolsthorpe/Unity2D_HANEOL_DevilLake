@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4290817600976802673}
   m_Layer: 9
   m_Name: Magma Stone 2
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

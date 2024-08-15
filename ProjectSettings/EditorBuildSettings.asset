@@ -10,8 +10,14 @@ EditorBuildSettings:
     guid: 2064c0be6e7def84aa359a7987ff332a
   - enabled: 1
     path: Assets/01.Scene/Game/Lake.unity
-    guid: 8460d72c32c36324fb74dfda6eabbc8b
+    guid: 8715591b6ea1c5c45909b4007d70496b
   - enabled: 1
+    path: Assets/01.Scene/Game/Level.unity
+    guid: ea12ea86fee951042b52a1253a3fc270
+  - enabled: 0
+    path: Assets/01.Scene/Game/Lake(Old).unity
+    guid: 8460d72c32c36324fb74dfda6eabbc8b
+  - enabled: 0
     path: Assets/01.Scene/Game/Tower(Old).unity
     guid: ed187717529ead744b86d39aa5b38f0b
   - enabled: 0
