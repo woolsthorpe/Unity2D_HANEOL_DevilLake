@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2706efee238445c49afb67bee583fc5e, type: 3}
   m_Name: Spear Attack
   m_EditorClassIdentifier: 
-  attackName: 
+  attackName: Spear Attack
   attackDescription: 
-  attackPrefab: {fileID: 0}
-  coolDown: 0
-  knockbackForce: 0
-  damage: 0
+  attackPrefab: {fileID: 7034233671767554878, guid: 4b5c294b08c16cb4a99a9c029bd5f704, type: 3}
+  coolDown: 1
+  knockbackForce: 5
+  damage: 3
   body: {fileID: 0}

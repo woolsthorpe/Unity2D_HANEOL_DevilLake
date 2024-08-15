@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponName: Spear
   weaponDescription: 
-  weaponAttack: {fileID: 11400000, guid: 484e6b8a6cbc4cf4f9eeded7caff29e6, type: 2}
+  weaponAttack: {fileID: 11400000, guid: 9c63092e0aba94d4aa0cd5297cbdc43d, type: 2}
   weaponSkill: {fileID: 0}

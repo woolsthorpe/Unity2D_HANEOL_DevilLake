@@ -43,6 +43,21 @@ public class Attack : MonoBehaviour
             {
                 Vector2 hitDirection = (other.gameObject.transform.position - attacker.transform.position).normalized;
                 damageable.TakeDamage(damage, true, hitDirection, knockbackForce);
+                if (other.gameObject.GetComponent<Enemy>().curHealth <= 0f) // 죽이면 흡혈
+                {
+                    Body body = attacker.gameObject.GetComponent<Body>();
+                    Enemy enemy = other.gameObject.GetComponent<Enemy>();
+                    
+                    body.currentBodyHealth += 
+                        enemy.bloodAmount + body.bodyData.extractedBloodAmount;
+                    if (body.currentBodyHealth > body.bodyData.maxBodyHealth)
+                    {
+                        body.currentBodyHealth = body.bodyData.maxBodyHealth;
+                    }
+                    
+                    //UI연동
+                    HUDController.instance.ChangeHpBar(body.currentBodyHealth, body.bodyData.maxBodyHealth);
+                }
             }
         }
     }

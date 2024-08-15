@@ -12,7 +12,7 @@ public class Enemy : MonoBehaviour, IDamageable
     public GameObject dropBody = null;
     public Sprite dropBodySprite;
     
-    [SerializeField] protected float curHealth;
+    [SerializeField] public float curHealth;
     protected bool isdead;
     protected bool isInvincible = false;
     

@@ -82,7 +82,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 20
   moveSpeed: 1.5
-  bloodAmount: 0
+  bloodAmount: 20
   invincibleDuration: 0.5
   dropBody: {fileID: 3291278968241901728, guid: 4f25399e3f3ea2044ae1340e620665fe, type: 3}
   dropBodySprite: {fileID: 85922430, guid: 736342dca6bdf8d4f83a4771e98efe7c, type: 3}
@@ -15071,7 +15071,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 20
   moveSpeed: 1.5
-  bloodAmount: 0
+  bloodAmount: 20
   invincibleDuration: 0.5
   dropBody: {fileID: 3291278968241901728, guid: 4f25399e3f3ea2044ae1340e620665fe, type: 3}
   dropBodySprite: {fileID: 85922430, guid: 736342dca6bdf8d4f83a4771e98efe7c, type: 3}
