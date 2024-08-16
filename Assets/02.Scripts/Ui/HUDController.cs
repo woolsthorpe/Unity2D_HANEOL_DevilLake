@@ -54,6 +54,10 @@ public class HUDController : MonoBehaviour
     private float shakeTimerTotal;
     private float shakeTimer;
 
+    [Space(5)]
+    [Header("Camera Settings")]
+    [SerializeField] Animator guiEventAnimator;
+    [SerializeField] private float defaultLensSize=4.5f;
     private void Awake()
     {
         if (instance == null)
@@ -78,7 +82,9 @@ public class HUDController : MonoBehaviour
             //시내머신 Virtual Camera -> Noise ->60Shake변경
             multiChannelPerlin = virtualCamera.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
         }
-        
+
+        virtualCamera.m_Lens.OrthographicSize = defaultLensSize;
+        multiChannelPerlin.m_AmplitudeGain = 0;
     }
 
     private void Update()
@@ -286,5 +292,37 @@ public class HUDController : MonoBehaviour
         startingIntencity = intensity;
         shakeTimerTotal = time;
         shakeTimer = time;
+    }
+
+    public void OnBlackBoard()
+    {
+        guiEventAnimator.SetBool("OnEvent",true);
+    }
+    public void OffBlackBoard()
+    {
+        guiEventAnimator.SetBool("OnEvent", false);
+    }
+
+    public void ChangeCameraFollowTarget(Transform newTarget)
+    {
+        virtualCamera.LookAt = newTarget;
+    }
+    public void ChangeCameraLensSize(float size)
+    {
+        StartCoroutine(SmoothChangeLensSize(0.65f,size));
+    }
+    IEnumerator SmoothChangeLensSize(float targetTime,float size)
+    {
+        float currentTime = 0;
+        float percent = 0;
+        while(percent<1)
+        {
+            currentTime += Time.deltaTime;
+            percent = currentTime / targetTime;
+            virtualCamera.m_Lens.OrthographicSize = Mathf.Lerp(defaultLensSize,size,percent);
+
+            yield return null;
+        }
+        virtualCamera.m_Lens.OrthographicSize = size;
     }
 }

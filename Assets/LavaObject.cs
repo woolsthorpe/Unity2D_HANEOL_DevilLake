@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Build;
+//using UnityEditor.Build;
 using UnityEngine;
 
 public class LavaObject : MonoBehaviour
@@ -74,7 +74,9 @@ public class LavaObject : MonoBehaviour
     {
         if(collision.CompareTag("Player"))
         {
-            collision.GetComponent<IDamageable>().TakeDamage(damageAmount,false,Vector2.up,knockBackAmount);
+            collision.TryGetComponent(out IDamageable damageable);
+            damageable.TakeDamage(damageAmount, false, Vector2.up, knockBackAmount);
+            
         }
     }
 
@@ -89,16 +91,21 @@ public class LavaObject : MonoBehaviour
 
     IEnumerator LavaSmoothUp(float targetTime, Vector3 targetPos)
     {
+        
         float currentTime=0f;
         float percent = 0f;
         Vector3 currentPos = this.transform.position;
+        Vector3 vec=currentPos;
+
+       HUDController.instance.ShakeCamera(0.8f,targetTime);
 
         while(percent<1)
         {
             currentTime += Time.deltaTime;
             percent = currentTime / targetTime;
-            currentPos.y = Mathf.Lerp(currentPos.y, targetPos.y, riseUpCurve.Evaluate(percent));
-            this.transform.position = currentPos;
+            vec.y = Mathf.Lerp(currentPos.y, targetPos.y, riseUpCurve.Evaluate(percent));
+            this.transform.position = vec;
+            
 
             yield return null;
 

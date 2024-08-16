@@ -7,6 +7,9 @@ public class Dandelsc : MonoBehaviour
     public float maxhealth;
     public float curhealth;
 
+    //카메라 변경 타겟 추가
+    [SerializeField] private GameObject heart;
+
     public GameObject Coals;
     public GameObject Flames;
     public GameObject FSpearman;
@@ -201,6 +204,8 @@ public class Dandelsc : MonoBehaviour
         transform.GetChild(1).GetChild(2).GetComponent<ParticleSystem>().Play();
 
         // 카메라 심장을 중심으로 이동시키기 + 줌아웃 4.5 -> 8~9
+        HUDController.instance.ChangeCameraFollowTarget(heart.transform);
+        HUDController.instance.ChangeCameraLensSize(10);
 
         transform.GetChild(1).GetChild(3).GetComponent<ParticleSystem>().Play();
         yield return new WaitForSeconds(1f);
@@ -215,6 +220,9 @@ public class Dandelsc : MonoBehaviour
         transform.GetChild(2).GetChild(1).GetComponent<ParticleSystem>().Play();
 
         // 전투 시작. 보스 및 플레이어 행동 가능
+
+        //HUD 줌인 초기화
+        HUDController.instance.OffBlackBoard();
 
         StartCoroutine("SpawnCoals");
         StartCoroutine("SpawnMans");
