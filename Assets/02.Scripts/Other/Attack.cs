@@ -29,7 +29,7 @@ public class Attack : MonoBehaviour
     {
         attackCollider.enabled = false;
     }
-    
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject == attacker) // 공격자는 피격하지 않음
@@ -39,7 +39,12 @@ public class Attack : MonoBehaviour
 
         if (other.gameObject.TryGetComponent(out IDamageable damageable))
         {
-            if (other.gameObject.CompareTag("Enemy"))
+            if (other.gameObject.CompareTag("Boss"))
+            {
+                Vector2 hitDirection = (other.gameObject.transform.position - attacker.transform.position).normalized;
+                damageable.TakeDamage(damage, true, hitDirection, knockbackForce);
+            }
+            else if (other.gameObject.CompareTag("Enemy"))
             {
                 Vector2 hitDirection = (other.gameObject.transform.position - attacker.transform.position).normalized;
                 damageable.TakeDamage(damage, true, hitDirection, knockbackForce);
@@ -47,18 +52,19 @@ public class Attack : MonoBehaviour
                 {
                     Body body = attacker.gameObject.GetComponent<Body>();
                     Enemy enemy = other.gameObject.GetComponent<Enemy>();
-                    
-                    body.currentBodyHealth += 
+
+                    body.currentBodyHealth +=
                         enemy.bloodAmount + body.bodyData.extractedBloodAmount;
                     if (body.currentBodyHealth > body.bodyData.maxBodyHealth)
                     {
                         body.currentBodyHealth = body.bodyData.maxBodyHealth;
                     }
-                    
+
                     //UI연동
                     HUDController.instance.ChangeHpBar(body.currentBodyHealth, body.bodyData.maxBodyHealth);
                 }
             }
+          
         }
     }
 

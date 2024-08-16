@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 7003063980188374248}
   - component: {fileID: 6046663107931574531}
   - component: {fileID: 9080927914260329903}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Charcoal
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -183,7 +183,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22c92bf6aa7f6444db21148573886fde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movespeed: 1.5
+  maxHealth: 20
+  moveSpeed: 2
+  bloodAmount: 15
+  invincibleDuration: 0.5
+  dropBody: {fileID: 0}
+  dropBodySprite: {fileID: 0}
+  curHealth: 0
+  rb: {fileID: 0}
+  sr: {fileID: 0}
+  anim: {fileID: 0}
+  tr: {fileID: 0}
   falling: 0
   Legs: {fileID: 4596490103063347035, guid: 0247d005d8a234b42891a2a10787b24c, type: 3}
   Explode: {fileID: 6964065574684356063, guid: 8ff3709d68ac3bb46a48f715c48ca73c, type: 3}
+  rayDistance: 1.5
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 576

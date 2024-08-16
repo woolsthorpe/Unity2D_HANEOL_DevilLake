@@ -61,6 +61,8 @@ public class Body : MonoBehaviour, IInteractable, IDamageable, IHealable
         bodyDropCollider.size = spriteBounds.size;
         bodyDropCollider.offset = Vector2.zero;
         bodyDropCollider.enabled = true;
+
+        HUDController.instance.currentWeapornIcon(weapons);
     }
 
     private void OnEnable()
@@ -110,7 +112,7 @@ public class Body : MonoBehaviour, IInteractable, IDamageable, IHealable
             _canChangeWeapon = true;
         }
 
-        HUDController.instance.currentWeapornIcon(weapons);
+        
     }
 
     private void FixedUpdate()
@@ -237,6 +239,8 @@ public class Body : MonoBehaviour, IInteractable, IDamageable, IHealable
 
             currentWeapon = weapons[0];
             nextWeapon = weapons[1];
+
+            HUDController.instance.currentWeapornIcon(weapons);
         }
         
         // 출혈 코루틴 재생 

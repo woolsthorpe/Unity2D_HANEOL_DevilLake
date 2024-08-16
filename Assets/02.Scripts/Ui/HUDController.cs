@@ -133,6 +133,7 @@ public class HUDController : MonoBehaviour
         if(changeHp<currentHealth && currentHealth-changeHp>1)
         {
             ShakeCamera(shakeIntencity,shakeTime);
+            //StartCoroutine(PlayerDamagedPause());
         }
         else if(changeHp>=currentHealth)
         {
@@ -288,6 +289,7 @@ public class HUDController : MonoBehaviour
 
     public void currentWeapornIcon(List<Weapon> weaporn)
     {
+        Debug.Log($"{weaporn.Count}    {weaporn[0].name}");
         if(weaporn.Count<=1)
         {
             if (weaporn[0].name =="Spear")
@@ -316,7 +318,12 @@ public class HUDController : MonoBehaviour
         shakeTimerTotal = time;
         shakeTimer = time;
     }
-
+     IEnumerator PlayerDamagedPause()
+    {
+        Time.timeScale = 0;
+        yield return new WaitForSeconds(0.05f);
+        Time.timeScale = 1;
+    }
     public void OnBlackBoard()
     {
         guiEventAnimator.SetBool("OnEvent",true);

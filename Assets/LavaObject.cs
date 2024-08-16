@@ -83,12 +83,24 @@ public class LavaObject : MonoBehaviour
             damageable.TakeDamage(damageAmount, false, Vector2.up, knockBackAmount);
 
         }
+
+        if (collision.CompareTag("Enemy"))
+        {
+            // collision.TryGetComponent(out IDamageable damageable);
+            // damageable.TakeDamage(damageAmount, false, Vector2.up, knockBackAmount);
+
+
+            IDamageable damageable = collision.GetComponent<Body>();
+
+            damageable.TakeDamage(damageAmount, false, Vector2.up, 0);
+
+        }
     }
 
 
     public void LavaRisehUp()
     {
-        Debug.Log("asdasd");
+       // Debug.Log("asdasd");
         gameObject.SetActive(true);
 
         StartCoroutine(LavaSmoothUp(riseUpTime,targetPos));
