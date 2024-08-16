@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 376123932543986638}
   - component: {fileID: 5291007463767039390}
   m_Layer: 13
-  m_Name: 'Belial Body '
+  m_Name: Init Belial Body
   m_TagString: Body
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -226,10 +226,10 @@ MonoBehaviour:
   rb: {fileID: 2056244707746596300}
   sr: {fileID: 4307825884959141848}
   animator: {fileID: 5766665589305105684}
+  isInitBody: 1
   bodyCollider: {fileID: 4183854220553577492}
   interactCollider: {fileID: 8483791941003898252}
   groundCheckTransform: {fileID: 9189500579430072051}
-  randomWeapon: 1
   isGround: 0
   facingRight: 0
   parasiticPlayer: {fileID: 0}
@@ -237,9 +237,10 @@ MonoBehaviour:
   bodyDropSprite: {fileID: 0}
   bodyDropCollider: {fileID: 5291007463767039390}
   currentBodyHealth: 0
-  weapons: []
-  currentWeapon: {fileID: 0}
-  nextWeapon: {fileID: 0}
+  weapons:
+  - {fileID: 11400000, guid: 1d46f9b16c25cee4992586c5c9f5cd07, type: 2}
+  currentWeapon: {fileID: 11400000, guid: 1d46f9b16c25cee4992586c5c9f5cd07, type: 2}
+  nextWeapon: {fileID: 11400000, guid: 1d46f9b16c25cee4992586c5c9f5cd07, type: 2}
 --- !u!61 &5291007463767039390
 BoxCollider2D:
   m_ObjectHideFlags: 0
