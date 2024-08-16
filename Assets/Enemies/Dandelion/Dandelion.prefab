@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6361002937455913473}
   - component: {fileID: 5148426570008497229}
   - component: {fileID: 8624894762310459971}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Particle System (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4850,7 +4850,7 @@ GameObject:
   - component: {fileID: 6436144185924285054}
   - component: {fileID: 3836700092439402422}
   - component: {fileID: 5814694407673404459}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Particle System (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9689,7 +9689,7 @@ GameObject:
   - component: {fileID: 4710189920984517326}
   - component: {fileID: 8166228674144690753}
   - component: {fileID: 4888051470267667556}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Particle System (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14518,7 +14518,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4280613414947820354}
   - component: {fileID: 3343974211330013660}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Armor2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14603,7 +14603,7 @@ GameObject:
   - component: {fileID: 1457606582351936456}
   - component: {fileID: 8952920727334066271}
   - component: {fileID: 4732399421658475061}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Particle System (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19442,7 +19442,7 @@ GameObject:
   - component: {fileID: 8676601330859515456}
   - component: {fileID: 2762392596252931277}
   - component: {fileID: 494963290744232696}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Particle System (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24272,7 +24272,7 @@ GameObject:
   - component: {fileID: 7465930174116001132}
   - component: {fileID: 2398448282997675519}
   - component: {fileID: 386765449292751474}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Particle System (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29110,7 +29110,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8508088784508773574}
   - component: {fileID: 6683209497156087292}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Heart_(Damaged)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29201,7 +29201,7 @@ GameObject:
   - component: {fileID: 6740963428339112740}
   - component: {fileID: 6542114145914265589}
   - component: {fileID: 5460534861505167777}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Particle System (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34040,7 +34040,7 @@ GameObject:
   - component: {fileID: 3441343509289134719}
   - component: {fileID: 380919800374196578}
   - component: {fileID: 8257337751506808144}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Particle System (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38879,7 +38879,7 @@ GameObject:
   - component: {fileID: 4645244713715739915}
   - component: {fileID: 727128604786613011}
   - component: {fileID: 7751254286824285496}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Pillar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38986,7 +38986,7 @@ GameObject:
   - component: {fileID: 6498139342641938632}
   - component: {fileID: 3597605389590086022}
   - component: {fileID: 5922855512254218427}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Particle System (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43825,9 +43825,9 @@ GameObject:
   - component: {fileID: 9089134066533362603}
   - component: {fileID: 5148147903398207018}
   - component: {fileID: 2253910240683199772}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Dandelion
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43903,6 +43903,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxhealth: 250
   curhealth: 0
+  heart: {fileID: 6250874697264795309}
   Coals: {fileID: 5769636872867117797, guid: d6151e6883fd4444f9e1c6682d148c60, type: 3}
   Flames: {fileID: 3944553462693954060, guid: 912ba5bdf30edec44b39b6e394c9b0c6, type: 3}
   FSpearman: {fileID: 8739474968298554023, guid: b049e107e48e5054a81155f8eeb0201e, type: 3}
@@ -43920,7 +43921,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5844835074267580622}
   - component: {fileID: 1210352985209917952}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Arm2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44004,7 +44005,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3245006061786508176}
   - component: {fileID: 114257424955360523}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Armor1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44088,7 +44089,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5371199191939284940}
   - component: {fileID: 6897717511178582746}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44174,7 +44175,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5822685975892684631}
   - component: {fileID: 899859595412845103}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Arm1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

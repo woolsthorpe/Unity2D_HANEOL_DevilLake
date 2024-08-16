@@ -72,11 +72,16 @@ public class LavaObject : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Player"))
+        if(collision.CompareTag("Body"))
         {
-            collision.TryGetComponent(out IDamageable damageable);
+            // collision.TryGetComponent(out IDamageable damageable);
+            // damageable.TakeDamage(damageAmount, false, Vector2.up, knockBackAmount);
+
+
+            IDamageable damageable = collision.GetComponent<Body>();
+
             damageable.TakeDamage(damageAmount, false, Vector2.up, knockBackAmount);
-            
+
         }
     }
 

@@ -36,11 +36,22 @@ public class InputManager : MonoBehaviour
         AttackPressed = InputAsset.Player.Attack.IsPressed();
         InteractPressed = InputAsset.Player.Interact.IsPressed();
 
+        if(HUDController.instance.isPlayerStatic)
+        {
+            JumpPressed = false;
+            AttackPressed = false;
+            InteractPressed = false;
+            Movement = Vector2.zero;
+            return;
+        }
+
+
         InputAsset.Player.Jump.performed += ctx => Jump();
         InputAsset.Player.Dash.performed += ctx => Dash();
         InputAsset.Player.Interact.performed += ctx => Interact();
         InputAsset.Player.Attack.performed += ctx => Attack();
         InputAsset.Player.ChangeWeapon.performed += ctx => ChangeWeapon();
+        InputAsset.Player.UseWeaponSkill.performed += ctx => WeaponSkill();
     }
     
     private void OnEnable()

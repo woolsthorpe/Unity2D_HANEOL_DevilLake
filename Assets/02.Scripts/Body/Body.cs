@@ -42,7 +42,9 @@ public class Body : MonoBehaviour, IInteractable, IDamageable, IHealable
     private int _curWeaponNum = 1;
     private float _changeWeaponTimer;
     private bool _canChangeWeapon;
-    
+
+
+   
     public void Initialize()
     {
         // 상태 초기화
@@ -107,6 +109,8 @@ public class Body : MonoBehaviour, IInteractable, IDamageable, IHealable
             _changeWeaponTimer = 0f;
             _canChangeWeapon = true;
         }
+
+        HUDController.instance.currentWeapornIcon(weapons);
     }
 
     private void FixedUpdate()
@@ -297,7 +301,11 @@ public class Body : MonoBehaviour, IInteractable, IDamageable, IHealable
 
     public void OnWeaponSkill()
     {
-        
+       
+        if(currentWeapon.name =="Sword")
+        {
+            Debug.Log("SWrod tmzlf");
+        }
     }
 
     public void IsGrounded()

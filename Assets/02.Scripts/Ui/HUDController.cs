@@ -58,6 +58,7 @@ public class HUDController : MonoBehaviour
     [Header("Camera Settings")]
     [SerializeField] Animator guiEventAnimator;
     [SerializeField] private float defaultLensSize=4.5f;
+    public bool isPlayerStatic { get; private set; }
     private void Awake()
     {
         if (instance == null)
@@ -85,6 +86,7 @@ public class HUDController : MonoBehaviour
 
         virtualCamera.m_Lens.OrthographicSize = defaultLensSize;
         multiChannelPerlin.m_AmplitudeGain = 0;
+        isPlayerStatic = false;
     }
 
     private void Update()
@@ -284,6 +286,27 @@ public class HUDController : MonoBehaviour
        
     }
 
+    public void currentWeapornIcon(List<Weapon> weaporn)
+    {
+        if(weaporn.Count<=1)
+        {
+            if (weaporn[0].name =="Spear")
+            {
+                SkillChange("Spear");
+                IcornOfWeaporn[1].enabled = false;
+            }
+            else
+            {
+                IcornOfWeaporn[0].enabled = false;
+            }
+        }
+        else
+        {
+            IcornOfWeaporn[0].enabled = true;
+            IcornOfWeaporn[1].enabled = true;
+        }
+    }
+
     public void ShakeCamera(float intensity,float time)
     {
         multiChannelPerlin.m_AmplitudeGain = intensity;
@@ -297,10 +320,12 @@ public class HUDController : MonoBehaviour
     public void OnBlackBoard()
     {
         guiEventAnimator.SetBool("OnEvent",true);
+        isPlayerStatic = true;
     }
     public void OffBlackBoard()
     {
         guiEventAnimator.SetBool("OnEvent", false);
+        isPlayerStatic = false;
     }
 
     public void ChangeCameraFollowTarget(Transform newTarget)

@@ -9,7 +9,7 @@ public class BossTrigger : MonoBehaviour
     [SerializeField] private LavaObject LavaObj;
     [SerializeField] private GameObject BossObj;
 
-    [SerializeField] private bool isTriggerPlayer;
+    [SerializeField] private bool isTriggerPlayer=false;
     
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -27,7 +27,7 @@ public class BossTrigger : MonoBehaviour
        
         HUDController.instance.OnBlackBoard();
         LavaObj.LavaRisehUp();
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
         //플레이어 상태 정지
         BossObj.GetComponent<Dandelsc>().Appear_Boss();
         // ui 활성화
