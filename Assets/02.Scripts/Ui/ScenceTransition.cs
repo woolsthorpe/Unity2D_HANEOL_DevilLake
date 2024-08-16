@@ -24,10 +24,7 @@ public class ScenceTransition : MonoBehaviour
     }
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.G))
-        {
-            ChangeScence("Start");
-        }
+        
     }
 
     public void ChangeScence(string scenceName)

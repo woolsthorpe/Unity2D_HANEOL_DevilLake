@@ -17,6 +17,9 @@ public class Body : MonoBehaviour, IInteractable, IDamageable, IHealable
     public SpriteRenderer sr;
     public Animator animator;
     
+    [Header("Settings")]
+    public bool isInitBody;             
+    
     [Header("Other")]
     public Collider2D bodyCollider;
     public Collider2D interactCollider;
@@ -174,29 +177,61 @@ public class Body : MonoBehaviour, IInteractable, IDamageable, IHealable
         _dashCoolDownTimer = parasiticPlayer.playerData.dashCoolDown;   // 대쉬 쿨다운 초기화
         currentBodyHealth = bodyData.maxBodyHealth;                     // 체력 초기화
         
-        // 혈기 무작위 획득 로직
-        weapons = new List<Weapon>();   // 보유한 혈기 리스트 초기화
-        List<Weapon> copiedList = new List<Weapon>(bodyData.getableWeapons);    // 획득 가능한 혈기 리스트 깊은 복사 ( 참조 X )
-        int randNum = Random.Range(1, copiedList.Count + 1);        // 무작위 갯수 
-        for (int i = 0; i < randNum; i++)
+
+        if (isInitBody)
         {
-            int weaponNum = Random.Range(0, copiedList.Count);
-            // 혈기 무작위 종류 획득 로직 작성
-            weapons.Add(copiedList[weaponNum]);
+            #region 혈기 무작위 획득 로직 ( 주석 )
+            // 혈기 무작위 획득 로직
+            /*
+            weapons = new List<Weapon>();   // 보유한 혈기 리스트 초기화
+            List<Weapon> copiedList = new List<Weapon>(bodyData.getableWeapons);    // 획득 가능한 혈기 리스트 깊은 복사 ( 참조 X )
+            int randNum = Random.Range(2, copiedList.Count + 1);        // 무작위 갯수  (2 ~ 획득 가능 무기 수)
+            for (int i = 0; i < randNum; i++)
+            {
+                int weaponNum = Random.Range(0, copiedList.Count);
+                // 혈기 무작위 종류 획득 로직 작성
+                weapons.Add(copiedList[weaponNum]);
             
-            // 중복 제거
-            copiedList.RemoveAt(weaponNum);
-        }
-        // 현재 혈기 지정
-        currentWeapon = weapons[0];
+                // 중복 제거
+                copiedList.RemoveAt(weaponNum);
+            }
+            // 현재 혈기 지정
+            currentWeapon = weapons[0];
         
-        // 다음 혈기 지정
-        if (weapons.Count == 1)
-        {
-            nextWeapon = weapons[0];
+            // 다음 혈기 지정
+            if (weapons.Count == 1)
+            {
+                nextWeapon = weapons[0];
+            }
+            else
+            {
+                nextWeapon = weapons[1];
+            }
+            */
+            #endregion
+
+            // // 검 또는 창 획득 로직 ( 혈기 1개 )
+            // weapons = new List<Weapon>();   // 보유한 혈기 리스트 초기화
+            // int weaponNum = Random.Range(0, bodyData.getableWeapons.Count + 1);
+            // weapons.Add(bodyData.getableWeapons[weaponNum]);
+            // currentWeapon = weapons[0];
+            // nextWeapon = weapons[0];
         }
         else
         {
+            // 검과 창 획득 로직 ( 순서 랜덤 )
+            weapons = new List<Weapon>();   // 보유한 혈기 리스트 초기화
+            List<Weapon> copiedList = new List<Weapon>(bodyData.getableWeapons);    // 획득 가능한 혈기 리스트 깊은 복사 ( 참조 X )
+            int randNum = Random.Range(2, 3); // 범위 : ( 2 ~ 2 ) <- 무조건 두 개
+            for (int i = 0; i < randNum; i++)
+            {
+                int weaponNum = Random.Range(0, copiedList.Count);
+                weapons.Add(copiedList[weaponNum]);
+                // 중복 제거
+                copiedList.RemoveAt(weaponNum);
+            }
+
+            currentWeapon = weapons[0];
             nextWeapon = weapons[1];
         }
         
