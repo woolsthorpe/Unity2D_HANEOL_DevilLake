@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 9011294052488732764}
   - component: {fileID: 5736697850902168084}
   - component: {fileID: 1955463161576000730}
+  - component: {fileID: 1434853023344579689}
   m_Layer: 0
   m_Name: fire_platform_hotstone 1
   m_TagString: Untagged
@@ -1205,3 +1206,48 @@ PolygonCollider2D:
       - {x: 2.4810266, y: -5.188128}
       - {x: 2.5853689, y: -5.072192}
   m_UseDelaunayMesh: 0
+--- !u!61 &1434853023344579689
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097663067727962218}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 3.994114}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 23.743656, y: 10.839999}
+    newSize: {x: 23.743656, y: 10.839999}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 23.743656, y: 2.8517723}
+  m_EdgeRadius: 0

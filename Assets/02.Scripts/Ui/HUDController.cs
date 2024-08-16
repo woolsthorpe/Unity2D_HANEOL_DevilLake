@@ -289,7 +289,7 @@ public class HUDController : MonoBehaviour
 
     public void currentWeapornIcon(List<Weapon> weaporn)
     {
-        Debug.Log($"{weaporn.Count}    {weaporn[0].name}");
+       
         if(weaporn.Count<=1)
         {
             if (weaporn[0].name =="Spear")

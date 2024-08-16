@@ -187,6 +187,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 3 (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -260,6 +264,10 @@ PrefabInstance:
     - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
       propertyPath: m_Name
       value: Magma Stone 3 (103)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -519,27 +527,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[5].y
-      value: 0.619017
+      value: 0.6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[6].y
-      value: 0.61904633
+      value: 0.6190462
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[7].y
-      value: 1.1270546
+      value: 1.2186689
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[8].y
-      value: 1.1270252
+      value: 1.2186396
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[9].y
-      value: 0.619017
+      value: 0.6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[10].y
-      value: 0.6189993
+      value: 0.6189992
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[11].y
@@ -563,19 +571,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[0].Y
-      value: 11270545
+      value: 12186689
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[1].Y
-      value: 11270545
+      value: 12186689
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[2].Y
-      value: 6190170
+      value: 6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[3].Y
-      value: 6190170
+      value: 6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[1].m_ColliderPaths.Array.data[0].Array.data[0].Y
@@ -717,11 +725,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7570d7a8bf122754299b02b64d5edb21, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[5].y
-      value: 0.9596588
+      value: 1.0230128
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7570d7a8bf122754299b02b64d5edb21, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[6].y
-      value: 0.95962954
+      value: 1.0229836
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7570d7a8bf122754299b02b64d5edb21, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[7].y
@@ -761,11 +769,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7570d7a8bf122754299b02b64d5edb21, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[0].Y
-      value: 9596588
+      value: 10230128
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7570d7a8bf122754299b02b64d5edb21, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[1].Y
-      value: 9596588
+      value: 10230128
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7570d7a8bf122754299b02b64d5edb21, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[2].Y
@@ -1077,6 +1085,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 3 (66)
       objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1157,6 +1169,10 @@ PrefabInstance:
     - target: {fileID: 9196403244942042961, guid: 6f5f29306b4e5524bab2dd10d9419fec, type: 3}
       propertyPath: m_Name
       value: Magma Stone 1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9196403244942042961, guid: 6f5f29306b4e5524bab2dd10d9419fec, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1354,23 +1370,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[5].y
-      value: 0.619017
+      value: 0.6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[6].x
-      value: 1.7173517
+      value: 1.7521766
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[6].y
-      value: 0.61904633
+      value: 0.6190462
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[7].x
-      value: 1.7173225
+      value: 1.7521472
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[7].y
-      value: 0.9817322
+      value: 1.0475129
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[8].x
@@ -1378,7 +1394,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[8].y
-      value: 0.9817029
+      value: 1.0474836
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[9].x
@@ -1386,15 +1402,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[9].y
-      value: 0.619017
+      value: 0.6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[10].x
-      value: -1.7402294
+      value: -1.7402292
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[10].y
-      value: 0.6189963
+      value: 0.6189962
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[11].x
@@ -1414,11 +1430,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[0].X
-      value: 17173516
+      value: 17521766
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[0].Y
-      value: 9817322
+      value: 10475129
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[1].X
@@ -1426,7 +1442,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[1].Y
-      value: 9817322
+      value: 10475129
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[2].X
@@ -1434,15 +1450,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[2].Y
-      value: 6190170
+      value: 6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[3].X
-      value: 17173516
+      value: 17521766
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[3].Y
-      value: 6190170
+      value: 6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[1].m_ColliderPaths.Array.data[0].Array.data[0].X
@@ -1854,6 +1870,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 3 (54)
       objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2067,6 +2087,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 3 (65)
       objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2202,6 +2226,10 @@ PrefabInstance:
     - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
       propertyPath: m_Name
       value: Magma Stone 3 (122)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2771,6 +2799,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 3 (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2853,6 +2885,10 @@ PrefabInstance:
     - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
       propertyPath: m_Name
       value: Magma Stone 3 (56)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2984,23 +3020,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[5].y
-      value: 0.619017
+      value: 0.6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[6].x
-      value: 1.7173517
+      value: 1.7521766
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[6].y
-      value: 0.61904633
+      value: 0.6190462
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[7].x
-      value: 1.7173225
+      value: 1.7521472
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[7].y
-      value: 0.9817322
+      value: 1.0475129
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[8].x
@@ -3008,7 +3044,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[8].y
-      value: 0.9817029
+      value: 1.0474836
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[9].x
@@ -3016,15 +3052,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[9].y
-      value: 0.619017
+      value: 0.6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[10].x
-      value: -1.7402294
+      value: -1.7402292
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[10].y
-      value: 0.6189963
+      value: 0.6189962
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[11].x
@@ -3044,11 +3080,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[0].X
-      value: 17173516
+      value: 17521766
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[0].Y
-      value: 9817322
+      value: 10475129
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[1].X
@@ -3056,7 +3092,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[1].Y
-      value: 9817322
+      value: 10475129
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[2].X
@@ -3064,15 +3100,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[2].Y
-      value: 6190170
+      value: 6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[3].X
-      value: 17173516
+      value: 17521766
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[3].Y
-      value: 6190170
+      value: 6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[1].m_ColliderPaths.Array.data[0].Array.data[0].X
@@ -3267,6 +3303,10 @@ PrefabInstance:
     - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
       propertyPath: m_Name
       value: Magma Stone 3 (74)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3547,6 +3587,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 3 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3595,27 +3639,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[5].y
-      value: 0.619017
+      value: 0.6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[6].y
-      value: 0.61904633
+      value: 0.6190462
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[7].y
-      value: 1.1270546
+      value: 1.2186689
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[8].y
-      value: 1.1270252
+      value: 1.2186396
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[9].y
-      value: 0.619017
+      value: 0.6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[10].y
-      value: 0.6189993
+      value: 0.6189992
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[11].y
@@ -3639,19 +3683,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[0].Y
-      value: 11270545
+      value: 12186689
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[1].Y
-      value: 11270545
+      value: 12186689
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[2].Y
-      value: 6190170
+      value: 6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[3].Y
-      value: 6190170
+      value: 6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[1].m_ColliderPaths.Array.data[0].Array.data[0].Y
@@ -3885,6 +3929,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 3 (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4033,6 +4081,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3858065016049028478, guid: 77a4f2b2efff40b4fa887fb26a5832cf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8969755297063130919, guid: 77a4f2b2efff40b4fa887fb26a5832cf, type: 3}
       propertyPath: m_SortingOrder
       value: 1
@@ -4090,27 +4142,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[5].y
-      value: 0.619017
+      value: 0.6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[6].y
-      value: 0.61904633
+      value: 0.6190462
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[7].y
-      value: 1.1270546
+      value: 1.2186689
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[8].y
-      value: 1.1270252
+      value: 1.2186396
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[9].y
-      value: 0.619017
+      value: 0.6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[10].y
-      value: 0.6189993
+      value: 0.6189992
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[11].y
@@ -4134,19 +4186,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[0].Y
-      value: 11270545
+      value: 12186689
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[1].Y
-      value: 11270545
+      value: 12186689
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[2].Y
-      value: 6190170
+      value: 6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[3].Y
-      value: 6190170
+      value: 6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[1].m_ColliderPaths.Array.data[0].Array.data[0].Y
@@ -4569,6 +4621,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 3 (78)
       objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4762,6 +4818,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 3 (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4909,6 +4969,10 @@ PrefabInstance:
     - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
       propertyPath: m_Name
       value: Magma Stone 3 (69)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5486,27 +5550,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[5].y
-      value: 0.619017
+      value: 0.6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[6].y
-      value: 0.61904633
+      value: 0.6190462
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[7].y
-      value: 1.1270546
+      value: 1.2186689
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[8].y
-      value: 1.1270252
+      value: 1.2186396
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[9].y
-      value: 0.619017
+      value: 0.6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[10].y
-      value: 0.6189993
+      value: 0.6189992
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[11].y
@@ -5530,19 +5594,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[0].Y
-      value: 11270545
+      value: 12186689
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[1].Y
-      value: 11270545
+      value: 12186689
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[2].Y
-      value: 6190170
+      value: 6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[3].Y
-      value: 6190170
+      value: 6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[1].m_ColliderPaths.Array.data[0].Array.data[0].Y
@@ -5710,6 +5774,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 3 (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5779,23 +5847,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[5].y
-      value: 0.619017
+      value: 0.6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[6].x
-      value: 1.7173517
+      value: 1.7521766
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[6].y
-      value: 0.61904633
+      value: 0.6190462
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[7].x
-      value: 1.7173225
+      value: 1.7521472
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[7].y
-      value: 0.9817322
+      value: 1.0475129
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[8].x
@@ -5803,7 +5871,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[8].y
-      value: 0.9817029
+      value: 1.0474836
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[9].x
@@ -5811,15 +5879,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[9].y
-      value: 0.619017
+      value: 0.6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[10].x
-      value: -1.7402294
+      value: -1.7402292
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[10].y
-      value: 0.6189963
+      value: 0.6189962
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[11].x
@@ -5839,11 +5907,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[0].X
-      value: 17173516
+      value: 17521766
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[0].Y
-      value: 9817322
+      value: 10475129
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[1].X
@@ -5851,7 +5919,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[1].Y
-      value: 9817322
+      value: 10475129
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[2].X
@@ -5859,15 +5927,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[2].Y
-      value: 6190170
+      value: 6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[3].X
-      value: 17173516
+      value: 17521766
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[3].Y
-      value: 6190170
+      value: 6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[1].m_ColliderPaths.Array.data[0].Array.data[0].X
@@ -6062,6 +6130,10 @@ PrefabInstance:
     - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
       propertyPath: m_Name
       value: Magma Stone 3 (52)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6369,27 +6441,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[5].y
-      value: 0.619017
+      value: 0.6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[6].y
-      value: 0.61904633
+      value: 0.6190462
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[7].y
-      value: 1.1270546
+      value: 1.2186689
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[8].y
-      value: 1.1270252
+      value: 1.2186396
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[9].y
-      value: 0.619017
+      value: 0.6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[10].y
-      value: 0.6189993
+      value: 0.6189992
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[11].y
@@ -6413,19 +6485,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[0].Y
-      value: 11270545
+      value: 12186689
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[1].Y
-      value: 11270545
+      value: 12186689
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[2].Y
-      value: 6190170
+      value: 6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[3].Y
-      value: 6190170
+      value: 6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[1].m_ColliderPaths.Array.data[0].Array.data[0].Y
@@ -6663,6 +6735,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 3 (102)
       objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6737,6 +6813,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 3 (88)
       objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6810,6 +6890,10 @@ PrefabInstance:
     - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
       propertyPath: m_Name
       value: Magma Stone 3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6953,23 +7037,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[5].y
-      value: 0.619017
+      value: 0.6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[6].x
-      value: 1.7173517
+      value: 1.7521766
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[6].y
-      value: 0.61904633
+      value: 0.6190462
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[7].x
-      value: 1.7173225
+      value: 1.7521472
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[7].y
-      value: 0.9817322
+      value: 1.0475129
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[8].x
@@ -6977,7 +7061,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[8].y
-      value: 0.9817029
+      value: 1.0474836
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[9].x
@@ -6985,15 +7069,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[9].y
-      value: 0.619017
+      value: 0.6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[10].x
-      value: -1.7402294
+      value: -1.7402292
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[10].y
-      value: 0.6189963
+      value: 0.6189962
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[11].x
@@ -7013,11 +7097,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[0].X
-      value: 17173516
+      value: 17521766
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[0].Y
-      value: 9817322
+      value: 10475129
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[1].X
@@ -7025,7 +7109,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[1].Y
-      value: 9817322
+      value: 10475129
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[2].X
@@ -7033,15 +7117,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[2].Y
-      value: 6190170
+      value: 6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[3].X
-      value: 17173516
+      value: 17521766
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[3].Y
-      value: 6190170
+      value: 6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[1].m_ColliderPaths.Array.data[0].Array.data[0].X
@@ -7512,6 +7596,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 3 (51)
       objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7656,6 +7744,10 @@ PrefabInstance:
     - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
       propertyPath: m_Name
       value: Magma Stone 3 (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8266,6 +8358,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 3 (105)
       objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8476,6 +8572,10 @@ PrefabInstance:
     - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
       propertyPath: m_Name
       value: Magma Stone 3 (80)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8815,6 +8915,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 3 (109)
       objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8959,6 +9063,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 3 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9032,6 +9140,10 @@ PrefabInstance:
     - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
       propertyPath: m_Name
       value: Magma Stone 3 (110)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9163,23 +9275,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[5].y
-      value: 0.619017
+      value: 0.6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[6].x
-      value: 1.7173517
+      value: 1.7521766
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[6].y
-      value: 0.61904633
+      value: 0.6190462
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[7].x
-      value: 1.7173225
+      value: 1.7521472
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[7].y
-      value: 0.9817322
+      value: 1.0475129
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[8].x
@@ -9187,7 +9299,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[8].y
-      value: 0.9817029
+      value: 1.0474836
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[9].x
@@ -9195,15 +9307,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[9].y
-      value: 0.619017
+      value: 0.6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[10].x
-      value: -1.7402294
+      value: -1.7402292
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[10].y
-      value: 0.6189963
+      value: 0.6189962
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[11].x
@@ -9223,11 +9335,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[0].X
-      value: 17173516
+      value: 17521766
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[0].Y
-      value: 9817322
+      value: 10475129
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[1].X
@@ -9235,7 +9347,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[1].Y
-      value: 9817322
+      value: 10475129
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[2].X
@@ -9243,15 +9355,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[2].Y
-      value: 6190170
+      value: 6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[3].X
-      value: 17173516
+      value: 17521766
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[3].Y
-      value: 6190170
+      value: 6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[1].m_ColliderPaths.Array.data[0].Array.data[0].X
@@ -9708,6 +9820,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 3 (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9971,6 +10087,10 @@ PrefabInstance:
     - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
       propertyPath: m_Name
       value: Magma Stone 3 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10397,6 +10517,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 3 (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10556,6 +10680,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 2 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3858065016049028478, guid: 77a4f2b2efff40b4fa887fb26a5832cf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8969755297063130919, guid: 77a4f2b2efff40b4fa887fb26a5832cf, type: 3}
       propertyPath: m_SortingOrder
       value: 1
@@ -10634,6 +10762,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 3 (57)
       objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10703,6 +10835,10 @@ PrefabInstance:
     - target: {fileID: 3858065016049028478, guid: 77a4f2b2efff40b4fa887fb26a5832cf, type: 3}
       propertyPath: m_Name
       value: Magma Stone 2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3858065016049028478, guid: 77a4f2b2efff40b4fa887fb26a5832cf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10782,6 +10918,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 3 (50)
       objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10859,6 +10999,10 @@ PrefabInstance:
     - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
       propertyPath: m_Name
       value: Magma Stone 3 (62)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11075,6 +11219,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 9196403244942042961, guid: 6f5f29306b4e5524bab2dd10d9419fec, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11153,6 +11301,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 3 (70)
       objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11226,6 +11378,10 @@ PrefabInstance:
     - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
       propertyPath: m_Name
       value: Magma Stone 3 (85)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11358,6 +11514,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 3 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11431,6 +11591,10 @@ PrefabInstance:
     - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
       propertyPath: m_Name
       value: Magma Stone 3 (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11773,6 +11937,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 3 (119)
       objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11912,6 +12080,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 3 (77)
       objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11960,27 +12132,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[5].y
-      value: 0.619017
+      value: 0.6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[6].y
-      value: 0.61904633
+      value: 0.6190462
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[7].y
-      value: 1.1270546
+      value: 1.2186689
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[8].y
-      value: 1.1270252
+      value: 1.2186396
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[9].y
-      value: 0.619017
+      value: 0.6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[10].y
-      value: 0.6189993
+      value: 0.6189992
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[11].y
@@ -12004,19 +12176,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[0].Y
-      value: 11270545
+      value: 12186689
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[1].Y
-      value: 11270545
+      value: 12186689
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[2].Y
-      value: 6190170
+      value: 6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[3].Y
-      value: 6190170
+      value: 6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[1].m_ColliderPaths.Array.data[0].Array.data[0].Y
@@ -12382,6 +12554,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 3 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12459,6 +12635,10 @@ PrefabInstance:
     - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
       propertyPath: m_Name
       value: Magma Stone 3 (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12603,6 +12783,10 @@ PrefabInstance:
     - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
       propertyPath: m_Name
       value: Magma Stone 3 (55)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12954,6 +13138,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 3
       objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12997,27 +13185,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[5].y
-      value: 0.619017
+      value: 0.6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[6].y
-      value: 0.61904633
+      value: 0.6190462
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[7].y
-      value: 1.1270546
+      value: 1.2186689
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[8].y
-      value: 1.1270252
+      value: 1.2186396
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[9].y
-      value: 0.619017
+      value: 0.6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[10].y
-      value: 0.6189993
+      value: 0.6189992
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[11].y
@@ -13041,19 +13229,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[0].Y
-      value: 11270545
+      value: 12186689
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[1].Y
-      value: 11270545
+      value: 12186689
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[2].Y
-      value: 6190170
+      value: 6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[3].Y
-      value: 6190170
+      value: 6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[1].m_ColliderPaths.Array.data[0].Array.data[0].Y
@@ -13288,6 +13476,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 3 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13352,23 +13544,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[5].y
-      value: 0.619017
+      value: 0.6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[6].x
-      value: 1.7173517
+      value: 1.7521766
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[6].y
-      value: 0.61904633
+      value: 0.6190462
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[7].x
-      value: 1.7173225
+      value: 1.7521472
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[7].y
-      value: 0.9817322
+      value: 1.0475129
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[8].x
@@ -13376,7 +13568,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[8].y
-      value: 0.9817029
+      value: 1.0474836
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[9].x
@@ -13384,15 +13576,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[9].y
-      value: 0.619017
+      value: 0.6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[10].x
-      value: -1.7402294
+      value: -1.7402292
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[10].y
-      value: 0.6189963
+      value: 0.6189962
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[11].x
@@ -13412,11 +13604,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[0].X
-      value: 17173516
+      value: 17521766
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[0].Y
-      value: 9817322
+      value: 10475129
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[1].X
@@ -13424,7 +13616,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[1].Y
-      value: 9817322
+      value: 10475129
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[2].X
@@ -13432,15 +13624,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[2].Y
-      value: 6190170
+      value: 6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[3].X
-      value: 17173516
+      value: 17521766
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[3].Y
-      value: 6190170
+      value: 6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[1].m_ColliderPaths.Array.data[0].Array.data[0].X
@@ -13636,6 +13828,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 3 (49)
       objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13779,6 +13975,10 @@ PrefabInstance:
     - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
       propertyPath: m_Name
       value: Magma Stone 3 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13964,6 +14164,10 @@ PrefabInstance:
     - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
       propertyPath: m_Name
       value: Magma Stone 3 (107)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14459,27 +14663,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[5].y
-      value: 0.619017
+      value: 0.6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[6].y
-      value: 0.61904633
+      value: 0.6190462
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[7].y
-      value: 1.1270546
+      value: 1.2186689
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[8].y
-      value: 1.1270252
+      value: 1.2186396
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[9].y
-      value: 0.619017
+      value: 0.6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[10].y
-      value: 0.6189993
+      value: 0.6189992
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[11].y
@@ -14503,19 +14707,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[0].Y
-      value: 11270545
+      value: 12186689
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[1].Y
-      value: 11270545
+      value: 12186689
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[2].Y
-      value: 6190170
+      value: 6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[3].Y
-      value: 6190170
+      value: 6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[1].m_ColliderPaths.Array.data[0].Array.data[0].Y
@@ -14674,6 +14878,10 @@ PrefabInstance:
     - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
       propertyPath: m_Name
       value: Magma Stone 3 (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15091,6 +15299,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 3 (64)
       objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15292,6 +15504,10 @@ PrefabInstance:
     - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
       propertyPath: m_Name
       value: Magma Stone 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15622,6 +15838,10 @@ PrefabInstance:
     - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
       propertyPath: m_Name
       value: Magma Stone 3 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16233,6 +16453,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 3 (58)
       objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16310,6 +16534,10 @@ PrefabInstance:
     - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
       propertyPath: m_Name
       value: Magma Stone 3 (79)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16389,6 +16617,10 @@ PrefabInstance:
     - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
       propertyPath: m_Name
       value: Magma Stone 3 (59)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16530,6 +16762,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 3 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16603,6 +16839,10 @@ PrefabInstance:
     - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
       propertyPath: m_Name
       value: Magma Stone 3 (60)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16916,6 +17156,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 3 (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16989,6 +17233,10 @@ PrefabInstance:
     - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
       propertyPath: m_Name
       value: Magma Stone 3 (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17141,6 +17389,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 3 (53)
       objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17280,6 +17532,10 @@ PrefabInstance:
     - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
       propertyPath: m_Name
       value: Magma Stone 3 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17515,6 +17771,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 3 (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17650,23 +17910,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[5].y
-      value: 0.619017
+      value: 0.6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[6].x
-      value: 1.7173517
+      value: 1.7521766
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[6].y
-      value: 0.61904633
+      value: 0.6190462
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[7].x
-      value: 1.7173225
+      value: 1.7521472
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[7].y
-      value: 0.9817322
+      value: 1.0475129
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[8].x
@@ -17674,7 +17934,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[8].y
-      value: 0.9817029
+      value: 1.0474836
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[9].x
@@ -17682,15 +17942,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[9].y
-      value: 0.619017
+      value: 0.6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[10].x
-      value: -1.7402294
+      value: -1.7402292
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[10].y
-      value: 0.6189963
+      value: 0.6189962
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[11].x
@@ -17710,7 +17970,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[0].X
-      value: 17173516
+      value: 17521766
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[1].X
@@ -17722,7 +17982,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[3].X
-      value: 17173516
+      value: 17521766
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[1].m_ColliderPaths.Array.data[0].Array.data[0].X
@@ -18038,6 +18298,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 3 (83)
       objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18091,27 +18355,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[5].y
-      value: 0.619017
+      value: 0.6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[6].y
-      value: 0.61904633
+      value: 0.6190462
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[7].y
-      value: 1.1270546
+      value: 1.2186689
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[8].y
-      value: 1.1270252
+      value: 1.2186396
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[9].y
-      value: 0.619017
+      value: 0.6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[10].y
-      value: 0.6189993
+      value: 0.6189992
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[11].y
@@ -18135,19 +18399,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[0].Y
-      value: 11270545
+      value: 12186689
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[1].Y
-      value: 11270545
+      value: 12186689
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[2].Y
-      value: 6190170
+      value: 6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[3].Y
-      value: 6190170
+      value: 6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[1].m_ColliderPaths.Array.data[0].Array.data[0].Y
@@ -18424,6 +18688,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9196403244942042961, guid: 6f5f29306b4e5524bab2dd10d9419fec, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18564,6 +18832,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 3 (108)
       objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18628,23 +18900,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[5].y
-      value: 0.619017
+      value: 0.6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[6].x
-      value: 1.7173517
+      value: 1.7521766
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[6].y
-      value: 0.61904633
+      value: 0.6190462
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[7].x
-      value: 1.7173225
+      value: 1.7521472
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[7].y
-      value: 0.9817322
+      value: 1.0475129
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[8].x
@@ -18652,7 +18924,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[8].y
-      value: 0.9817029
+      value: 1.0474836
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[9].x
@@ -18660,15 +18932,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[9].y
-      value: 0.619017
+      value: 0.6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[10].x
-      value: -1.7402294
+      value: -1.7402292
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[10].y
-      value: 0.6189963
+      value: 0.6189962
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[11].x
@@ -18688,11 +18960,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[0].X
-      value: 17173516
+      value: 17521766
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[0].Y
-      value: 9817322
+      value: 10475129
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[1].X
@@ -18700,7 +18972,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[1].Y
-      value: 9817322
+      value: 10475129
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[2].X
@@ -18708,15 +18980,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[2].Y
-      value: 6190170
+      value: 6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[3].X
-      value: 17173516
+      value: 17521766
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[3].Y
-      value: 6190170
+      value: 6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[1].m_ColliderPaths.Array.data[0].Array.data[0].X
@@ -19350,27 +19622,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[5].y
-      value: 0.619017
+      value: 0.6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[6].y
-      value: 0.61904633
+      value: 0.6190462
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[7].y
-      value: 1.1270546
+      value: 1.2186689
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[8].y
-      value: 1.1270252
+      value: 1.2186396
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[9].y
-      value: 0.619017
+      value: 0.6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[10].y
-      value: 0.6189993
+      value: 0.6189992
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[11].y
@@ -19394,19 +19666,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[0].Y
-      value: 11270545
+      value: 12186689
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[1].Y
-      value: 11270545
+      value: 12186689
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[2].Y
-      value: 6190170
+      value: 6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[3].Y
-      value: 6190170
+      value: 6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[1].m_ColliderPaths.Array.data[0].Array.data[0].Y
@@ -19570,6 +19842,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 3 (121)
       objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19638,6 +19914,10 @@ PrefabInstance:
     - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
       propertyPath: m_Name
       value: Magma Stone 3 (104)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20005,6 +20285,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 3 (84)
       objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20074,6 +20358,10 @@ PrefabInstance:
     - target: {fileID: 3858065016049028478, guid: 77a4f2b2efff40b4fa887fb26a5832cf, type: 3}
       propertyPath: m_Name
       value: Magma Stone 2 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3858065016049028478, guid: 77a4f2b2efff40b4fa887fb26a5832cf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20148,6 +20436,10 @@ PrefabInstance:
     - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
       propertyPath: m_Name
       value: Magma Stone 3 (44)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20433,6 +20725,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 3 (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20577,6 +20873,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 3 (67)
       objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20712,6 +21012,10 @@ PrefabInstance:
     - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
       propertyPath: m_Name
       value: Magma Stone 3 (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21245,6 +21549,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 3 (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21576,6 +21884,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 3 (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21711,6 +22023,10 @@ PrefabInstance:
     - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
       propertyPath: m_Name
       value: Magma Stone 3 (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21918,6 +22234,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 3 (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22124,7 +22444,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: ba56ecc6b833645438ac820f2107afdc, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[14].y
-      value: 1.2682341
+      value: 1.4026327
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: ba56ecc6b833645438ac820f2107afdc, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[15].x
@@ -22132,7 +22452,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: ba56ecc6b833645438ac820f2107afdc, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[15].y
-      value: 1.2682048
+      value: 1.4026034
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: ba56ecc6b833645438ac820f2107afdc, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[16].x
@@ -22412,6 +22732,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 2 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3858065016049028478, guid: 77a4f2b2efff40b4fa887fb26a5832cf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8969755297063130919, guid: 77a4f2b2efff40b4fa887fb26a5832cf, type: 3}
       propertyPath: m_SortingOrder
       value: 1
@@ -22556,6 +22880,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 3 (106)
       objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22699,6 +23027,10 @@ PrefabInstance:
     - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
       propertyPath: m_Name
       value: Magma Stone 3 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22922,6 +23254,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 3 (75)
       objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23127,6 +23463,10 @@ PrefabInstance:
     - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
       propertyPath: m_Name
       value: Magma Stone 3 (120)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23340,6 +23680,10 @@ PrefabInstance:
     - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
       propertyPath: m_Name
       value: Magma Stone 3 (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23581,23 +23925,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[5].y
-      value: 0.619017
+      value: 0.6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[6].x
-      value: 1.7173517
+      value: 1.7521766
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[6].y
-      value: 0.61904633
+      value: 0.6190462
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[7].x
-      value: 1.7173225
+      value: 1.7521472
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[7].y
-      value: 0.9817322
+      value: 1.0475129
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[8].x
@@ -23605,7 +23949,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[8].y
-      value: 0.9817029
+      value: 1.0474836
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[9].x
@@ -23613,15 +23957,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[9].y
-      value: 0.619017
+      value: 0.6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[10].x
-      value: -1.7402294
+      value: -1.7402292
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[10].y
-      value: 0.6189963
+      value: 0.6189962
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[11].x
@@ -23641,11 +23985,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[0].X
-      value: 17173516
+      value: 17521766
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[0].Y
-      value: 9817322
+      value: 10475129
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[1].X
@@ -23653,7 +23997,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[1].Y
-      value: 9817322
+      value: 10475129
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[2].X
@@ -23661,15 +24005,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[2].Y
-      value: 6190170
+      value: 6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[3].X
-      value: 17173516
+      value: 17521766
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[3].Y
-      value: 6190170
+      value: 6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[1].m_ColliderPaths.Array.data[0].Array.data[0].X
@@ -24059,6 +24403,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9196403244942042961, guid: 6f5f29306b4e5524bab2dd10d9419fec, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24193,6 +24541,10 @@ PrefabInstance:
     - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
       propertyPath: m_Name
       value: Magma Stone 3 (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -24461,6 +24813,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 3 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24657,23 +25013,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[5].y
-      value: 0.619017
+      value: 0.6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[6].x
-      value: 1.7173517
+      value: 1.7521766
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[6].y
-      value: 0.61904633
+      value: 0.6190462
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[7].x
-      value: 1.7173225
+      value: 1.7521472
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[7].y
-      value: 0.9817322
+      value: 1.0475129
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[8].x
@@ -24681,7 +25037,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[8].y
-      value: 0.9817029
+      value: 1.0474836
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[9].x
@@ -24689,15 +25045,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[9].y
-      value: 0.619017
+      value: 0.6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[10].x
-      value: -1.7402294
+      value: -1.7402292
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[10].y
-      value: 0.6189963
+      value: 0.6189962
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[11].x
@@ -24717,7 +25073,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[0].X
-      value: 17173516
+      value: 17521766
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[1].X
@@ -24729,7 +25085,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[3].X
-      value: 17173516
+      value: 17521766
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[1].m_ColliderPaths.Array.data[0].Array.data[0].X
@@ -24891,27 +25247,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[5].y
-      value: 0.619017
+      value: 0.6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[6].y
-      value: 0.61904633
+      value: 0.6190462
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[7].y
-      value: 1.1270546
+      value: 1.2186689
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[8].y
-      value: 1.1270252
+      value: 1.2186396
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[9].y
-      value: 0.619017
+      value: 0.6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[10].y
-      value: 0.6189993
+      value: 0.6189992
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[11].y
@@ -24935,19 +25291,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[0].Y
-      value: 11270545
+      value: 12186689
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[1].Y
-      value: 11270545
+      value: 12186689
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[2].Y
-      value: 6190170
+      value: 6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[3].Y
-      value: 6190170
+      value: 6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[1].m_ColliderPaths.Array.data[0].Array.data[0].Y
@@ -25115,6 +25471,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 3 (68)
       objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25171,11 +25531,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7570d7a8bf122754299b02b64d5edb21, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[5].y
-      value: 0.9596588
+      value: 1.0230128
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7570d7a8bf122754299b02b64d5edb21, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[6].y
-      value: 0.95962954
+      value: 1.0229836
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7570d7a8bf122754299b02b64d5edb21, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[7].y
@@ -25215,11 +25575,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7570d7a8bf122754299b02b64d5edb21, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[0].Y
-      value: 9596588
+      value: 10230128
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7570d7a8bf122754299b02b64d5edb21, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[1].Y
-      value: 9596588
+      value: 10230128
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7570d7a8bf122754299b02b64d5edb21, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[2].Y
@@ -25387,6 +25747,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 3 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25455,6 +25819,10 @@ PrefabInstance:
     - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
       propertyPath: m_Name
       value: Magma Stone 3 (113)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -25973,6 +26341,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 3 (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26047,6 +26419,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 3 (72)
       objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26111,23 +26487,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[5].y
-      value: 0.619017
+      value: 0.6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[6].x
-      value: 1.7173517
+      value: 1.7521766
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[6].y
-      value: 0.61904633
+      value: 0.6190462
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[7].x
-      value: 1.7173225
+      value: 1.7521472
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[7].y
-      value: 0.9817322
+      value: 1.0475129
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[8].x
@@ -26135,7 +26511,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[8].y
-      value: 0.9817029
+      value: 1.0474836
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[9].x
@@ -26143,15 +26519,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[9].y
-      value: 0.619017
+      value: 0.6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[10].x
-      value: -1.7402294
+      value: -1.7402292
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[10].y
-      value: 0.6189963
+      value: 0.6189962
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[11].x
@@ -26171,11 +26547,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[0].X
-      value: 17173516
+      value: 17521766
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[0].Y
-      value: 9817322
+      value: 10475129
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[1].X
@@ -26183,7 +26559,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[1].Y
-      value: 9817322
+      value: 10475129
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[2].X
@@ -26191,15 +26567,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[2].Y
-      value: 6190170
+      value: 6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[3].X
-      value: 17173516
+      value: 17521766
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[3].Y
-      value: 6190170
+      value: 6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[1].m_ColliderPaths.Array.data[0].Array.data[0].X
@@ -26395,6 +26771,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 3 (76)
       objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26468,6 +26848,10 @@ PrefabInstance:
     - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
       propertyPath: m_Name
       value: Magma Stone 3 (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -26546,6 +26930,10 @@ PrefabInstance:
     - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
       propertyPath: m_Name
       value: Magma Stone 3 (63)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -26630,6 +27018,10 @@ PrefabInstance:
     - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
       propertyPath: m_Name
       value: Magma Stone 3 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -26839,6 +27231,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 3 (48)
       objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26917,6 +27313,10 @@ PrefabInstance:
     - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
       propertyPath: m_Name
       value: Magma Stone 3 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -27301,27 +27701,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[5].y
-      value: 0.619017
+      value: 0.6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[6].y
-      value: 0.61904633
+      value: 0.6190462
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[7].y
-      value: 1.1270546
+      value: 1.2186689
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[8].y
-      value: 1.1270252
+      value: 1.2186396
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[9].y
-      value: 0.619017
+      value: 0.6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[10].y
-      value: 0.6189993
+      value: 0.6189992
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[11].y
@@ -27345,19 +27745,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[0].Y
-      value: 11270545
+      value: 12186689
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[1].Y
-      value: 11270545
+      value: 12186689
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[2].Y
-      value: 6190170
+      value: 6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[3].Y
-      value: 6190170
+      value: 6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[1].m_ColliderPaths.Array.data[0].Array.data[0].Y
@@ -27521,6 +27921,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 3 (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27594,6 +27998,10 @@ PrefabInstance:
     - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
       propertyPath: m_Name
       value: Magma Stone 3 (45)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -27783,11 +28191,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7570d7a8bf122754299b02b64d5edb21, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[5].y
-      value: 0.9596588
+      value: 1.0230128
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7570d7a8bf122754299b02b64d5edb21, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[6].y
-      value: 0.95962954
+      value: 1.0229836
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7570d7a8bf122754299b02b64d5edb21, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[7].y
@@ -27827,11 +28235,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7570d7a8bf122754299b02b64d5edb21, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[0].Y
-      value: 9596588
+      value: 10230128
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7570d7a8bf122754299b02b64d5edb21, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[1].Y
-      value: 9596588
+      value: 10230128
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7570d7a8bf122754299b02b64d5edb21, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[2].Y
@@ -28125,7 +28533,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 5c210e8c537d28b46b4c483ee4c5708c, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[10].y
-      value: 1.6148149
+      value: 1.735115
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 5c210e8c537d28b46b4c483ee4c5708c, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[11].x
@@ -28133,7 +28541,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 5c210e8c537d28b46b4c483ee4c5708c, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[11].y
-      value: 1.6147856
+      value: 1.7350856
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 5c210e8c537d28b46b4c483ee4c5708c, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[12].x
@@ -28253,7 +28661,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 5c210e8c537d28b46b4c483ee4c5708c, type: 3}
       propertyPath: m_ColliderPaths.Array.data[1].m_ColliderPaths.Array.data[0].Array.data[0].Y
-      value: 16148148
+      value: 17351150
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 5c210e8c537d28b46b4c483ee4c5708c, type: 3}
       propertyPath: m_ColliderPaths.Array.data[1].m_ColliderPaths.Array.data[0].Array.data[1].X
@@ -28261,7 +28669,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 5c210e8c537d28b46b4c483ee4c5708c, type: 3}
       propertyPath: m_ColliderPaths.Array.data[1].m_ColliderPaths.Array.data[0].Array.data[1].Y
-      value: 16148148
+      value: 17351150
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 5c210e8c537d28b46b4c483ee4c5708c, type: 3}
       propertyPath: m_ColliderPaths.Array.data[1].m_ColliderPaths.Array.data[0].Array.data[2].X
@@ -28564,6 +28972,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 3 (87)
       objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28638,6 +29050,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 3 (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28702,23 +29118,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[5].y
-      value: 0.619017
+      value: 0.6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[6].x
-      value: 1.7173517
+      value: 1.7521766
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[6].y
-      value: 0.61904633
+      value: 0.6190462
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[7].x
-      value: 1.7173225
+      value: 1.7521472
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[7].y
-      value: 0.9817322
+      value: 1.0475129
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[8].x
@@ -28726,7 +29142,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[8].y
-      value: 0.9817029
+      value: 1.0474836
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[9].x
@@ -28734,15 +29150,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[9].y
-      value: 0.619017
+      value: 0.6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[10].x
-      value: -1.7402294
+      value: -1.7402292
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[10].y
-      value: 0.6189963
+      value: 0.6189962
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[11].x
@@ -28762,7 +29178,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[0].X
-      value: 17173516
+      value: 17521766
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[1].X
@@ -28774,7 +29190,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[3].X
-      value: 17173516
+      value: 17521766
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[1].m_ColliderPaths.Array.data[0].Array.data[0].X
@@ -29064,6 +29480,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 3 (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -29137,6 +29557,10 @@ PrefabInstance:
     - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
       propertyPath: m_Name
       value: Magma Stone 3 (86)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -29344,6 +29768,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 3 (71)
       objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -29496,6 +29924,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 3 (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -29569,6 +30001,10 @@ PrefabInstance:
     - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
       propertyPath: m_Name
       value: Magma Stone 3 (61)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -29696,23 +30132,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[5].y
-      value: 0.619017
+      value: 0.6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[6].x
-      value: 1.7173517
+      value: 1.7521766
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[6].y
-      value: 0.61904633
+      value: 0.6190462
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[7].x
-      value: 1.7173225
+      value: 1.7521472
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[7].y
-      value: 0.9817322
+      value: 1.0475129
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[8].x
@@ -29720,7 +30156,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[8].y
-      value: 0.9817029
+      value: 1.0474836
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[9].x
@@ -29728,15 +30164,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[9].y
-      value: 0.619017
+      value: 0.6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[10].x
-      value: -1.7402294
+      value: -1.7402292
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[10].y
-      value: 0.6189963
+      value: 0.6189962
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[11].x
@@ -29756,7 +30192,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[0].X
-      value: 17173516
+      value: 17521766
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[1].X
@@ -29768,7 +30204,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[3].X
-      value: 17173516
+      value: 17521766
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[1].m_ColliderPaths.Array.data[0].Array.data[0].X
@@ -29964,6 +30400,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Magma Stone 3 (73)
       objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -30103,6 +30543,10 @@ PrefabInstance:
     - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
       propertyPath: m_Name
       value: Magma Stone 3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -30291,23 +30735,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[5].y
-      value: 0.619017
+      value: 0.6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[6].x
-      value: 1.7173517
+      value: 1.7521766
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[6].y
-      value: 0.61904633
+      value: 0.6190462
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[7].x
-      value: 1.7173225
+      value: 1.7521472
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[7].y
-      value: 0.9817322
+      value: 1.0475129
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[8].x
@@ -30315,7 +30759,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[8].y
-      value: 0.9817029
+      value: 1.0474836
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[9].x
@@ -30323,15 +30767,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[9].y
-      value: 0.619017
+      value: 0.6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[10].x
-      value: -1.7402294
+      value: -1.7402292
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[10].y
-      value: 0.6189963
+      value: 0.6189962
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[11].x
@@ -30351,11 +30795,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[0].X
-      value: 17173516
+      value: 17521766
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[0].Y
-      value: 9817322
+      value: 10475129
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[1].X
@@ -30363,7 +30807,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[1].Y
-      value: 9817322
+      value: 10475129
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[2].X
@@ -30371,15 +30815,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[2].Y
-      value: 6190170
+      value: 6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[3].X
-      value: 17173516
+      value: 17521766
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[3].Y
-      value: 6190170
+      value: 6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[1].m_ColliderPaths.Array.data[0].Array.data[0].X
@@ -30965,27 +31409,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[5].y
-      value: 0.619017
+      value: 0.6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[6].y
-      value: 0.61904633
+      value: 0.6190462
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[7].y
-      value: 1.1270546
+      value: 1.2186689
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[8].y
-      value: 1.1270252
+      value: 1.2186396
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[9].y
-      value: 0.619017
+      value: 0.6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[10].y
-      value: 0.6189993
+      value: 0.6189992
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[11].y
@@ -31009,19 +31453,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[0].Y
-      value: 11270545
+      value: 12186689
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[1].Y
-      value: 11270545
+      value: 12186689
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[2].Y
-      value: 6190170
+      value: 6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[3].Y
-      value: 6190170
+      value: 6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[1].m_ColliderPaths.Array.data[0].Array.data[0].Y
@@ -31439,23 +31883,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[5].y
-      value: 0.619017
+      value: 0.6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[6].x
-      value: 1.7173517
+      value: 1.7521766
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[6].y
-      value: 0.61904633
+      value: 0.6190462
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[7].x
-      value: 1.7173225
+      value: 1.7521472
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[7].y
-      value: 0.9817322
+      value: 1.0475129
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[8].x
@@ -31463,7 +31907,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[8].y
-      value: 0.9817029
+      value: 1.0474836
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[9].x
@@ -31471,15 +31915,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[9].y
-      value: 0.619017
+      value: 0.6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[10].x
-      value: -1.7402294
+      value: -1.7402292
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[10].y
-      value: 0.6189963
+      value: 0.6189962
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[11].x
@@ -31499,11 +31943,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[0].X
-      value: 17173516
+      value: 17521766
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[0].Y
-      value: 9817322
+      value: 10475129
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[1].X
@@ -31511,7 +31955,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[1].Y
-      value: 9817322
+      value: 10475129
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[2].X
@@ -31519,15 +31963,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[2].Y
-      value: 6190170
+      value: 6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[3].X
-      value: 17173516
+      value: 17521766
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[3].Y
-      value: 6190170
+      value: 6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: 7112751fc69bf83478d35fc7f0574ffd, type: 3}
       propertyPath: m_ColliderPaths.Array.data[1].m_ColliderPaths.Array.data[0].Array.data[0].X
@@ -31755,27 +32199,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[5].y
-      value: 0.619017
+      value: 0.6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[6].y
-      value: 0.61904633
+      value: 0.6190462
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[7].y
-      value: 1.1270546
+      value: 1.2186689
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[8].y
-      value: 1.1270252
+      value: 1.2186396
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[9].y
-      value: 0.619017
+      value: 0.6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[10].y
-      value: 0.6189993
+      value: 0.6189992
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[11].y
@@ -31799,19 +32243,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[0].Y
-      value: 11270545
+      value: 12186689
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[1].Y
-      value: 11270545
+      value: 12186689
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[2].Y
-      value: 6190170
+      value: 6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[3].Y
-      value: 6190170
+      value: 6190169
       objectReference: {fileID: 0}
     - target: {fileID: 771584018867014008, guid: d5f08913a7dd23c4e8bc74ed37449f4f, type: 3}
       propertyPath: m_ColliderPaths.Array.data[1].m_ColliderPaths.Array.data[0].Array.data[0].Y
@@ -32494,6 +32938,10 @@ PrefabInstance:
     - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
       propertyPath: m_Name
       value: Magma Stone 3 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911002864253267137, guid: 2843508e69982c844aed53dab5b2a370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
