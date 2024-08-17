@@ -200,4 +200,4 @@ MonoBehaviour:
   rayDistance: 1.5
   wallLayer:
     serializedVersion: 2
-    m_Bits: 576
+    m_Bits: 33344

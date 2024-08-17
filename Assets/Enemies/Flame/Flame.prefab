@@ -201,7 +201,7 @@ MonoBehaviour:
   Firewalk: {fileID: 5105066902962594296, guid: 384adca65f046054a93b9e2ae9c1d9bc, type: 3}
   wallLayer:
     serializedVersion: 2
-    m_Bits: 576
+    m_Bits: 33344
   rayDistance: 1.5
 --- !u!1 &3983005961936822707
 GameObject:

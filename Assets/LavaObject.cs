@@ -92,7 +92,7 @@ public class LavaObject : MonoBehaviour
 
             IDamageable damageable = collision.GetComponent<Body>();
 
-            damageable.TakeDamage(damageAmount, false, Vector2.up, 0);
+            damageable.TakeDamage(damageAmount*2, false, Vector2.up, 0);
 
         }
     }

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2550189346105281859}
   - component: {fileID: 6060782955761636489}
   - component: {fileID: 2391515726882267857}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Particle System (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4852,7 +4852,7 @@ GameObject:
   - component: {fileID: 5843700434630724218}
   - component: {fileID: 9084105609284077205}
   - component: {fileID: 1294921948437140217}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Broken_Spear
   m_TagString: Untagged
   m_Icon: {fileID: 0}

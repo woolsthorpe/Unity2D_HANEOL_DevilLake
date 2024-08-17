@@ -278,6 +278,8 @@ public class Dandelsc : MonoBehaviour, IDamageable
         // 무적 시간 적용
         StartCoroutine(InvincibilityCoroutine());
 
+        HUDController.instance.ShakeCamera(3f, 1f);
+        HUDController.instance.TimeStop(0.05f);
 
         // 대미지
         curhealth -= amount;

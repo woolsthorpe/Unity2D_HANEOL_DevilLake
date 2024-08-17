@@ -311,6 +311,9 @@ public class HUDController : MonoBehaviour
 
     public void ShakeCamera(float intensity,float time)
     {
+       
+
+
         multiChannelPerlin.m_AmplitudeGain = intensity;
         multiChannelPerlin.m_FrequencyGain = shakeFrequency;
 
@@ -318,10 +321,15 @@ public class HUDController : MonoBehaviour
         shakeTimerTotal = time;
         shakeTimer = time;
     }
-     IEnumerator PlayerDamagedPause()
+   
+    public void TimeStop(float time)
+    {
+        StartCoroutine(TimeToStop(time));
+    }
+    IEnumerator TimeToStop(float time)
     {
         Time.timeScale = 0;
-        yield return new WaitForSeconds(0.05f);
+        yield return new WaitForSecondsRealtime(time);
         Time.timeScale = 1;
     }
     public void OnBlackBoard()

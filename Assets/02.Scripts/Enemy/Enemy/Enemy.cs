@@ -8,7 +8,7 @@ public class Enemy : MonoBehaviour, IDamageable
     public float maxHealth;
     public float moveSpeed;
     public float bloodAmount;
-    public float invincibleDuration = 0.5f;        // 무적 시간 
+    public float invincibleDuration = 0.35f;        // 무적 시간 
     public GameObject dropBody = null;
     public Sprite dropBodySprite;
     
@@ -40,6 +40,10 @@ public class Enemy : MonoBehaviour, IDamageable
             return;
         }
 
+        HUDController.instance.ShakeCamera(2.5f, 1f);
+        HUDController.instance.TimeStop(0.05f);
+
+
         // 무적 시간 적용
         StartCoroutine(InvincibilityCoroutine());
         
@@ -50,6 +54,8 @@ public class Enemy : MonoBehaviour, IDamageable
         curHealth -= amount;
         Debug.Log($"받은 대미지 : {amount}\n" +
                   $"남은 체력 : {curHealth}");
+
+       
         if (curHealth <= 0f)
         {
             Die();
